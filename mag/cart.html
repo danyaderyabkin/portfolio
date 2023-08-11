@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Корзина</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="container container-header">
+            <div class="header__city">
+                <p>г. Москва
+                <ul class="header__city-select" style="display: none;">
+                    <li class="header__city-item">item1</li>
+                    <li class="header__city-item">item2</li>
+                    <li class="header__city-item">item3</li>
+                    <li class="header__city-item">item4</li>
+                </ul>
+                </p>
+            </div>
+            <div class="header__info">
+                <ul class="header__list">
+                    <li class="header__item"><a href="">Личный кабинет</a></li>
+                    <li class="header__item"><a href="tel:+79158349548">8 800 322 95 48</a> </li>
+                    <li class="header__item"><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="container section-menu">
+            <nav class="nav">
+                <span class="menu-item-burger-main" ><img src="img/menu.svg" alt="" class="menu-item-img"></span>
+                <ul id="menu" class="menu">
+                    <li class="menu-item-logo"><a href="/"><img src="img/logo.png" alt=""></a></li>
+                    <li class="menu-item"><a href="/" class="active">Главная</a></li>
+                    <li class="menu-item"><a href="catalog">Каталоги</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/sellers">Продавцы</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/pay">Оплата</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/delivery">Доставка</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/brand">Бренд</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/contacts">Контакты</a></li>
+                </ul>
+                <ul class="menu menu-1">
+                    <li class="menu-item-logo"><a href="/"><img src="img/logo.png" alt=""></a></li>
+                    <li class="menu-item-close"><span id="close-menu"><img src="img/close.svg" alt="" ></span></li>
+                    <li class="menu-item"><a href="/" class="active">Главная</a></li>
+                    <li class="menu-item"><a href="catalog">Каталоги</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/sellers">Продавцы</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/pay">Оплата</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/delivery">Доставка</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/brand">Бренд</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/contacts">Контакты</a></li>
+                </ul>
+                <ul class="menu menu-2">
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="img/search.svg" alt="" class="menu-item-img">
+                            <p class="menu-item-text">Поиск</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="img/heart.svg" alt="" class="menu-item-img">
+                            <p class="menu-item-text">Избранное</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="img/bag.svg" alt="" class="menu-item-img">
+                            <p class="menu-item-text">2 / $531.00</p>
+                        </a>
+                    </li>
+                    <li class="menu-item-burger">
+                        <img src="img/menu.svg" alt="" class="menu-item-img">
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="breadcrumb">
+            <div class="container-1440">
+                <ul class="breadcrumd-list">
+                    <li class="breadcrumd-item">
+                        <a href="/" class="breadcrumd-link">Главная</a>
+                    </li>
+                    <li class="breadcrumd-item">
+                        <a href="/catalog" class="breadcrumd-link">корзина</a>
+                    </li>
+
+                </ul>
+                <h2 class="catalog-heading">Корзина</h2>
+            </div>
+
+        </section>
+        <section class="container">
+            <div class="container-1440 cart-container">
+                <h2 class="undf-cart" style="display: none;">Ваша корзина пуста.</h2>
+                <ul class="cart-list">
+                    <li class="cart-item"><img src="img/close.svg" alt=""></li>
+                    <li class="cart-item cart-item-img"><img src="img/bag-4.jpg" alt="" class="products-item-photo">
+                    </li>
+                    <li class="cart-item cart-item-mobile">
+                        <h4 class="product-name">Сумка Versache</h4>
+                        <div class="mobile-input-cost">
+                            <div class="cart-input-mobile">
+                                <input type="number" class="quantproduct" min="0" max="9999" step="1" value="1">
+                                <div class="amount-change">
+                                    <span type="button" class="plus">+</span>
+                                    <span class="minus" type="button">-</span>
+                                </div>
+                            </div>
+                            <p class="product-cost-mobile">Цена: <span class="product-cost-mobile">&nbsp;5000 ₽</span></p>
+                        </div>
+                    </li>
+                    <li class="cart-item-ll">
+                        <div class="cart">
+                            <div class="cart-input hide-mob">
+                                <input type="number" class="quantproduct" min="0" max="9999" step="1" value="1">
+                                <div class="amount-change">
+                                    <span type="button" class="plus">+</span>
+                                    <span class="minus" type="button">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-item-ll">
+                        <p class="product-cost hide-mob">Цена: <span class="product-cost">5000 ₽</span></p>
+                    </li>
+                </ul>
+                <ul class="cart-info-list">
+                    <li class="cart-info-item">
+                        <p class="product-name">Сумка Versache</p>
+                        <p class="product-cost cost-medium">5000 ₽</p>
+                    </li>
+                    <li class="cart-info-item">
+                        <p>Сумма с учетом скидки</p>
+                        <p class="product-sale">5000</p>
+                        <p class="product-cost product-cost-sale">4300 ₽</p>
+                    </li>
+                    <li class="cart-info-cost">
+                        <p class="full-price">Итого</p>
+                        <p class="product-cost product-cost-sale">4300 ₽</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="container">
+            <div class="container-1440 cart-load">
+                <div class="cart-1">
+                    <h2>Оформление заказа</h2>
+                    <form action="POST" class="form-cart">
+                        <div class="cart-form">
+                            <input class="form-control-cart" type="text" name="name" placeholder="Имя*">
+                        </div>
+                        <div class="cart-form">
+                            <input class="form-control-cart" type="text" name="lastname" placeholder="Фамилия*">
+                        </div>
+                        <div class="cart-form">
+                            <input class="form-control-cart" type="text" name="address" placeholder="Адрес*">
+                        </div>
+                        <div class="cart-form">
+                            <input class="form-control-cart" type="text" name="phone" placeholder="Телефон*">
+                        </div>
+                        <div class="cart-form">
+                            <input class="form-control-cart" type="email" name="email" placeholder="Почта*">
+                        </div>
+                    </form>
+                </div>
+                <div class="cart-devandpay">
+                    <div class="cart-2">
+                        <h2>Доставка</h2>
+                        <div class="check-div">
+                            <input type="checkbox">
+                            <p>Доставка</p>
+                        </div>
+                        <div class="check-div">
+                            <input type="checkbox">
+                            <p>Самовывоз</p>
+                        </div>
+                        <p class="desription">Минимальная сумма заказа 500 ₽</p>
+                    </div>
+                    <div class="cart-3">
+                        <h2>Оплата</h2>
+                        <div class="check-div">
+                            <input type="checkbox">
+                            <p>VISA</p>
+                        </div>
+                        <div class="check-div">
+                            <input type="checkbox">
+                            <p>MIR</p>
+                        </div>
+                        <div class="check-div">
+                            <input type="checkbox">
+                            <p>MASTERCARD</p>
+                        </div>
+                        <div>
+                            <p class="desription pay-description">Kана ручеек реторический сбить продолжил родного семь?
+                                Безорфографичный, букв.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-1440 confirm">
+                <div class="check-div">
+                    <input type="checkbox">
+                    <p>Настоящим подтверждаю, что ознакомлен и согласен с условиями Политики в отношении обработки персональных данных</p>
+                </div>
+                <div class="check-div">
+                    <input type="checkbox">
+                    <p>Настоящим подтверждаю, что ознакомлен и согласен с правилами магазина</p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="container-1440 btn-complete">
+            <button class="btn product-btn cart-send">Оформить заказ</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="container">
+            <div class="container__footer">
+                <div class="footer__lists">
+                    <ul class="footer__list-payments">
+                        <li class="footer__item-mp"><a href="">Маркетплейс</a></li>
+                        <ul class="footer__list-payment">
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                        </ul>
+                        <ul class="footer__list-payment">
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                        </ul>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Контакты</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Санкт-Петербург, Соснева 34</a>
+                        </li>
+                        <li class="footer__item">Телефон: <a href="tel:+79239879009">+7-923-987-90-09</a></li>
+                        <li class="footer__item"><a href="mailto:info@palce.ru"></a>info@palce.ru</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Информация</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">О компании</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Оплата</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Доставка</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Возврат</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Гарантии</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Каталог</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Мужчины</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Женщины</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Дети</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Подростки</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Большие размеры</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Маркетплейс</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Продавцы</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Шоурумы</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Новинки</a></li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">®Все права защищены! by Moovix</div>
+            </div>
+        </section>
+    </footer>
+    <ul class="menu-burger">
+        <span class="menu-close"><img src="img/close.svg" alt=""></span>
+        <li class="menu-burger-item"><a href="" class="menu-burger-link">item1</a></li>
+        <li class="menu-burger-item"><a href="" class="menu-burger-link">item2</a></li>
+        <li class="menu-burger-item"><a href="" class="menu-burger-link">item3</a></li>
+        <li class="menu-burger-item-last"><a href="" class="menu-burger-link">by Moovix</a></li>
+    </ul>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

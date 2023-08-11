@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ProJect</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="container container-header">
+            <div class="header__city">
+                <p>г. Москва
+                <ul class="header__city-select" style="display: none;">
+                    <li class="header__city-item">item1</li>
+                    <li class="header__city-item">item2</li>
+                    <li class="header__city-item">item3</li>
+                    <li class="header__city-item">item4</li>
+                </ul>
+                </p>
+            </div>
+            <div class="header__info">
+                <ul class="header__list">
+                    <li class="header__item"><a href="">Личный кабинет</a></li>
+                    <li class="header__item"><a href="tel:+79158349548">8 800 322 95 48</a> </li>
+                    <li class="header__item"><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="section-menu">
+            <nav class="nav">
+                <span class="menu-item-burger-main" ><img src="img/menu.svg" alt="" class="menu-item-img"></span>
+                <ul id="menu" class="menu">
+                    <li class="menu-item-logo"><a href="/"><img src="img/logo.png" alt=""></a></li>
+                    <li class="menu-item"><a href="/" class="active">Главная</a></li>
+                    <li class="menu-item"><a href="catalog">Каталоги</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/sellers">Продавцы</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/pay">Оплата</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/delivery">Доставка</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/brand">Бренд</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/contacts">Контакты</a></li>
+                </ul>
+                <ul class="menu menu-1">
+                    <li class="menu-item-logo"><a href="/"><img src="img/logo.png" alt=""></a></li>
+                    <li class="menu-item-close"><span id="close-menu"><img src="img/close.svg" alt="" ></span></li>
+                    <li class="menu-item"><a href="/" class="active">Главная</a></li>
+                    <li class="menu-item"><a href="catalog">Каталоги</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/sellers">Продавцы</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/pay">Оплата</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/delivery">Доставка</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/brand">Бренд</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="" class="sublink">Виагро</a> </li>
+                            <li class="subitem"><a href="" class="sublink">Босс</a></li>
+                            <li class="subitem"><a href="" class="sublink">Валентино</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/contacts">Контакты</a></li>
+                </ul>
+                <ul class="menu menu-2">
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="img/search.svg" alt="" class="menu-item-img">
+                            <p class="menu-item-text">Поиск</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="img/heart.svg" alt="" class="menu-item-img">
+                            <p class="menu-item-text">Избранное</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="img/bag.svg" alt="" class="menu-item-img">
+                            <p class="menu-item-text">2 / $531.00</p>
+                        </a>
+                    </li>
+                    <li class="menu-item-burger">
+                        <img src="img/menu.svg" alt="" class="menu-item-img">
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="container section-1">
+            <div class="main-bg">
+                <ul class="main-bg-menu">
+                    <li class="main-bg-item"><a href="" class="main-bg-link">Facebook</a></li>
+                    <li class="main-bg-item"><a href="" class="main-bg-link">Instagram</a></li>
+                    <li class="main-bg-item"><a href="" class="main-bg-link">Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container section-2">
+            <div class="container-1440">
+                <div class="content">
+                    <div class="content-item-1">
+                        <div class="texts">
+                            <div class="content-sales">
+                                <p class="content-cost"><span>$</span> 350</p>
+                                <p class="content-sale">скидка 30%</p>
+                            </div>
+                            <div class="content-info">
+                                <h2 class="heading">Элегантно и <br> Cтильно</h2>
+                                <a href="" class="info-link">новые коллекции</a>
+                            </div>
+                            <div class="slider-btn">
+                                <div class="brands-item"><img src="img/back.svg" alt=""></div>
+                                <div class="brands-item"><img src="img/next.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <img src="img/bag-1.webp" alt="">
+                    </div>
+                </div>
+                <div class="content content-1">
+                    <div class="content-item">
+                        <img src="img/bag-1.webp" alt="">
+                    </div>
+                    <div class="content-item-1 ci-1">
+                        <div class="texts">
+                            <div class="content-sales">
+                                <p class="content-cost"><span>$</span> 350</p>
+                                <p class="content-sale">скидка 30%</p>
+                            </div>
+                            <div class="content-info">
+                                <h2 class="heading">качество в<br> деталях</h2>
+                                <a href="" class="info-link">смотреть каталог</a>
+                            </div>
+                            <div class="slider-btn" style="display: none;">
+                                <div class="brands-item"><img src="img/back.svg" alt=""></div>
+                                <div class="brands-item"><img src="img/next.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container section-3">
+            <div class="container-1440">
+                <div class="texts">
+                    <p class="desription">Летние наборы</p>
+                    <h2 class="heading">Одежда на каждый день</h2>
+                    <p class="text">Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                        тексты.</p>
+                </div>
+                <ul class="products">
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark" style="display: none;">new</p>
+                                <p class="products-mark-sale">sale</p>
+                                <img src="img/bag-2.webp" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale" style="display: none;">5000</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark">new</p>
+                                <p class="products-mark-sale" style="display: none;">sale</p>
+                                <img src="img/bag-3.jpg" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale">5000</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark" style="display: none;">new</p>
+                                <p class="products-mark-sale">sale</p>
+                                <img src="img/bag-4.jpg" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale" style="display: none;">5000</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark">new</p>
+                                <p class="products-mark-sale" style="display: none;">sale</p>
+                                <img src="img/bag-2.webp" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale" style="display: none;">5000</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark" style="display: none;">new</p>
+                                <p class="products-mark-sale">sale</p>
+                                <img src="img/bag-3.jpg" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale">5000</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark">new</p>
+                                <p class="products-mark-sale" style="display: none;">sale</p>
+                                <img src="img/bag-4.jpg" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale" style="display: none;">5000</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark" style="display: none;">new</p>
+                                <p class="products-mark-sale">sale</p>
+                                <img src="img/bag-5.jpg" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale">5000</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products-item">
+                        <a href="" class="products-link">
+                            <div class="products-img">
+                                <p class="products-mark" style="display: none;">new</p>
+                                <p class="products-mark-sale" style="display: none;">sale</p>
+                                <img src="img/bag-1.webp" alt="" class="products-item-photo">
+                            </div>
+                            <div class="products-item-desription">
+                                <div class="product-info">
+                                    <p class="product-name">Сумка</p>
+                                    <p class="product-sale" style="display: none;">Сумка</p>
+                                    <p class="product-cost">4300 ₽</p>
+                                </div>
+                                <p class="products-desription">Сумки</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="section-bg"></div>
+            <div class="adv">
+                <h2 class="adv-heading">Платья, Топы</h2>
+                <img src="img/slider.jfif" alt="" class="adv-bg">
+            </div>
+        </section>
+        <section class="container section-5">
+            <div class="texts">
+                <p class="desription">Летняя коллекция</p>
+                <h2 class="heading">Женские сумки</h2>
+            </div>
+            <ul class="collection">
+                <li class="collection-item">
+                    <a href="" class="collection-link">
+                        <p class="collection-block" style="display: none;">Mission Bag</p>
+                        <div class="collection-img">
+                            <img src="img/bag-2.webp" alt="" class="collection-photo">
+                        </div>
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="" class="collection-link">
+                        <p class="collection-block">Mission Bag</p>
+                        <div class="collection-img">
+                            <img src="img/bag-3.jpg" alt="" class="collection-photo">
+                        </div>
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="" class="collection-link">
+                        <p class="collection-block" style="display: none;">Mission Bag</p>
+                        <div class="collection-img">
+                            <img src="img/bag-2.webp" alt="" class="collection-photo">
+                        </div>
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="" class="collection-link">
+                        <p class="collection-block">Mission Bag</p>
+                        <div class="collection-img">
+                            <img src="img/bag-3.jpg" alt="" class="collection-photo">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="container section-6">
+            <div class="texts">
+                <p class="desription">Лучшие</p>
+                <h2 class="brands-heading">Предствители каталога</h2>
+            </div>
+            <div class="brands-slider">
+                <div class="brands-list">
+                    <div class="brands-item"><img src="img/back.svg" alt=""></div>
+                    <div class="brands-item-main">
+                        <p class="text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные
+                            тексты. Родного ipsum, ее рекламных ручеек от всех первую домах, возвращайся то заглавных
+                            переписывается ты курсивных рыбного.</p>
+                        <p class="brands-text">Родина</p>
+                        <p class="brands-text-1">Дизайнерская одежда</p>
+                        <p class="brands-text-2"><span>○</span> <span>&#149;</span> <span>&#149;</span></p>
+                    </div>
+                    <div class="brands-item"><img src="img/next.svg" alt=""></div>
+                </div>
+                <div class="brands">
+                    <div class="brans-photo"><img src="img/brand1.png" alt=""></div>
+                    <div class="brans-photo"><img src="img/brand2.png" alt=""></div>
+                    <div class="brans-photo"><img src="img/brand1.png" alt=""></div>
+                    <div class="brans-photo"><img src="img/brand2.png" alt=""></div>
+                    <div class="brans-photo"><img src="img/brand1.png" alt=""></div>
+                    <div class="brans-photo"><img src="img/brand2.png" alt=""></div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container section-7">
+            <div class="info-photo"><img src="img/info.jpg" alt=""></div>
+            <div class="info">
+                <div class="texts">
+                    <p class="desription">Летняя коллекция</p>
+                    <h2 class="heading">Легкость и стиль</h2>
+                    <p class="text">Далеко-далеко за словесными горами в стране гласных. B горами в стране гласных.</p>
+                    <p class="text">Далеко-далеко за словесными горами в стране гласных.</p>
+                    <a href="" class="info-link">Каталог</a>
+                </div>
+            </div>
+        </section>
+        <section class="container section-8">
+            <div class="container-1440">
+                <div class="texts">
+                    <h2 class="heading">Новости</h2>
+                    <p class="text">Следите за нашими обновлениями</p>
+                </div>
+                <ul class="news">
+                    <li class="news-item">
+                        <a href="" class="news-link">
+                            <p class="news-block">2 июля</p>
+                            <div>
+                                <img src="img/bag-3.jpg" alt="" class="news-photo">
+                            </div>
+                            <div class="news-head">Выбор качественного материала для летнего сезона</div>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="" class="news-link">
+                            <p class="news-block">2 мая</p>
+                            <div>
+                                <img src="img/bag-2.webp" alt="" class="news-photo">
+                            </div>
+                            <div class="news-head">Выбор качественного материала для летнего сезона</div>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="" class="news-link">
+                            <p class="news-block">21 января</p>
+                            <div>
+                                <img src="img/bag-3.jpg" alt="" class="news-photo">
+                            </div>
+                            <div class="news-head">Выбор качественного материала для летнего сезона</div>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="" class="news-link">
+                            <p class="news-block">20 июля</p>
+                            <div>
+                                <img src="img/bag-2.webp" alt="" class="news-photo">
+                            </div>
+                            <div class="news-head">Выбор качественного материала для летнего сезона</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="container">
+            <div class="container__footer">
+                <div class="footer__lists">
+                    <ul class="footer__list-payments">
+                        <li class="footer__item-mp"><a href="">Маркетплейс</a></li>
+                        <ul class="footer__list-payment">
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                        </ul>
+                        <ul class="footer__list-payment">
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                            <li class="footer__item-payment"><a href="" class="footer__item-link"><img
+                                        src="img/visa.svg" alt=""></a></li>
+                        </ul>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Контакты</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Санкт-Петербург, Соснева 34</a>
+                        </li>
+                        <li class="footer__item">Телефон: <a href="tel:+79239879009">+7-923-987-90-09</a></li>
+                        <li class="footer__item"><a href="mailto:info@palce.ru"></a>info@palce.ru</li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Информация</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">О компании</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Оплата</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Доставка</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Возврат</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Гарантии</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Каталог</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Мужчины</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Женщины</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Дети</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Подростки</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Большие размеры</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item-main"><a href="" class="footer__item-link">Маркетплейс</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Продавцы</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Шоурумы</a></li>
+                        <li class="footer__item"><a href="" class="footer__item-link">Новинки</a></li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">®Все права защищены! by Moovix</div>
+            </div>
+        </section>
+    </footer>
+    <ul class="menu-burger">
+        <span class="menu-close"><img src="img/close.svg" alt=""></span>
+        <li class="menu-burger-item"><a href="" class="menu-burger-link">item1</a></li>
+        <li class="menu-burger-item"><a href="" class="menu-burger-link">item2</a></li>
+        <li class="menu-burger-item"><a href="" class="menu-burger-link">item3</a></li>
+        <li class="menu-burger-item-last">by Moovix</li>
+    </ul>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
