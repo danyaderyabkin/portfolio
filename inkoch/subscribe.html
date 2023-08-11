@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Авторизация | Inkoch</title>
+</head>
+
+<body>
+
+    <header class="header-second">
+
+        <a href="index.html" class="header__logo header__logo-second">
+            <img src="img/logo2.svg" alt="logo">
+        </a>
+        <div class="container header__container js-menu-wrap">
+            <label class="switch dark-label">
+                <input class="visually-hidden" id="dark-theme" type="checkbox">
+                <span class="slider"></span>
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_827_14)">
+                        <path
+                            d="M12.8066 0.59375C13.799 2.06277 14.3285 3.79539 14.3269 5.56819C14.3269 10.5263 10.2639 14.5457 5.25142 14.5457C3.61265 14.5487 2.00346 14.1092 0.59375 13.2736C2.13988 16.3171 5.32267 18.4062 9.00036 18.4062C14.1951 18.4062 18.406 14.2408 18.406 9.10219C18.406 5.30427 16.104 2.03983 12.8066 0.59375Z"
+                            fill="currentColor" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_827_14">
+                            <rect width="19" height="19" fill="currentColor" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </label>
+            <nav class="nav">
+                <h2 class="visually-hidden">Навигация по сайту</h2>
+                <ul class="nav__list reset-list">
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Заказы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Конкурсы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Исполнители</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Заказчики</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Помощь</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-wrap">
+                <a class="btn header__auth" href="auth.html">
+                    Авторизация
+                </a>
+                <a class="btn header__reg" href="register.html">Регистрация</a>
+            </div>
+        </div>
+        <button class="header__burger hamburger hamburger--collapse js-burger reset-btn" type="button">
+            <span class="hamburger__box">
+                <span class="hamburger__inner"></span>
+            </span>
+        </button>
+    </header>
+
+    <main>
+        <section class="help help__subscribe">
+            <div class="help__container container">
+                <div class="help__sub help__sub-main">
+                    <h1 class="help__title text-center mb-2">Получить статус
+                        <svg width="105" height="55" viewBox="0 0 105 55" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_430_121)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7 0C3.13401 0 0 3.13401 0 7L0 48C0 51.866 3.13401 55 7 55L98 55C101.866 55 105 51.866 105 48L105 7C105 3.13401 101.866 0 98 0L7 0ZM28.2729 14.3658C26.6996 13.6192 24.8063 13.2458 22.5929 13.2458L14.3529 13.2458L14.3529 42.3658H19.0329L19.0329 32.2858L23.2329 32.2858C25.0729 32.2858 26.6196 32.0058 27.8729 31.4458C29.1529 30.8592 30.1663 30.0992 30.9129 29.1658C31.6863 28.2325 32.2463 27.1925 32.5929 26.0458C32.9663 24.8992 33.1529 23.7525 33.1529 22.6058C33.1529 20.6325 32.7263 18.9525 31.8729 17.5658C31.0463 16.1792 29.8463 15.1125 28.2729 14.3658ZM25.7929 27.2458C25.0996 27.5925 24.2463 27.7658 23.2329 27.7658H19.0329V17.7258H23.3529C24.3929 17.7258 25.2463 17.8992 25.9129 18.2458C26.5796 18.5658 27.0996 18.9925 27.4729 19.5258C27.8463 20.0325 28.1129 20.5792 28.2729 21.1658C28.4329 21.7258 28.5129 22.2458 28.5129 22.7258C28.5129 23.1792 28.4196 23.6992 28.2329 24.2858C28.0729 24.8458 27.7929 25.3925 27.3929 25.9258C27.0196 26.4592 26.4863 26.8992 25.7929 27.2458ZM51.4061 13.8858C50.0727 13.4592 48.6061 13.2458 47.0061 13.2458H38.8061L38.8061 42.3658H43.4861V32.2458H47.6861C47.8461 32.2458 48.004 32.2438 48.1597 32.2398L54.7261 42.3658H60.1261L53.0562 31.1148C54.0564 30.5956 54.8797 29.9459 55.5261 29.1658C56.3261 28.2325 56.8994 27.1925 57.2461 26.0458C57.5927 24.8992 57.7661 23.7525 57.7661 22.6058C57.7661 21.1125 57.4994 19.7925 56.9661 18.6458C56.4594 17.4725 55.7394 16.4858 54.8061 15.6858C53.8727 14.8858 52.7394 14.2858 51.4061 13.8858ZM50.2461 27.2858C49.5527 27.6058 48.6861 27.7658 47.6461 27.7658H43.4861L43.4861 17.7258H47.8061C48.8194 17.7258 49.6594 17.8992 50.3261 18.2458C51.0194 18.5925 51.5527 19.0325 51.9261 19.5658C52.2994 20.0725 52.5661 20.6192 52.7261 21.2058C52.8861 21.7658 52.9661 22.2858 52.9661 22.7658C52.9661 23.2725 52.8727 23.8192 52.6861 24.4058C52.5261 24.9658 52.2461 25.4992 51.8461 26.0058C51.4727 26.5125 50.9394 26.9392 50.2461 27.2858ZM64.1817 22.1258C63.4084 23.9125 63.0217 25.8192 63.0217 27.8458C63.0217 29.9258 63.4084 31.8725 64.1817 33.6858C64.955 35.4725 66.0217 37.0458 67.3817 38.4058C68.7417 39.7392 70.315 40.7925 72.1017 41.5658C73.8884 42.3125 75.8217 42.6858 77.9017 42.6858C79.9284 42.6858 81.835 42.3125 83.6217 41.5658C85.435 40.7925 87.0217 39.7258 88.3817 38.3658C89.7684 36.9792 90.8484 35.3925 91.6217 33.6058C92.4217 31.8192 92.8217 29.8992 92.8217 27.8458C92.8217 25.8192 92.4217 23.9125 91.6217 22.1258C90.8484 20.3392 89.7684 18.7525 88.3817 17.3658C87.0217 15.9792 85.435 14.8992 83.6217 14.1258C81.835 13.3258 79.9284 12.9258 77.9017 12.9258C75.8484 12.9258 73.915 13.3258 72.1017 14.1258C70.315 14.8992 68.7417 15.9792 67.3817 17.3658C66.0217 18.7525 64.955 20.3392 64.1817 22.1258ZM68.5817 31.8858C68.075 30.6325 67.8217 29.2858 67.8217 27.8458C67.8217 26.4058 68.075 25.0592 68.5817 23.8058C69.0883 22.5258 69.795 21.4058 70.7017 20.4458C71.635 19.4858 72.715 18.7392 73.9417 18.2058C75.1684 17.6725 76.4883 17.4058 77.9017 17.4058C79.315 17.4058 80.635 17.6725 81.8617 18.2058C83.0884 18.7392 84.155 19.4858 85.0617 20.4458C85.9684 21.4058 86.6884 22.5125 87.2217 23.7658C87.755 25.0192 88.0217 26.3792 88.0217 27.8458C88.0217 29.2858 87.755 30.6325 87.2217 31.8858C86.715 33.1392 86.0084 34.2458 85.1017 35.2058C84.195 36.1392 83.1283 36.8725 81.9017 37.4058C80.7017 37.9392 79.4084 38.2058 78.0217 38.2058C76.5817 38.2058 75.2484 37.9392 74.0217 37.4058C72.795 36.8725 71.715 36.1392 70.7817 35.2058C69.8484 34.2458 69.115 33.1392 68.5817 31.8858Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_430_121">
+                                    <rect width="105" height="55" fill="currentColor" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </h1>
+                    <svg class="svg-att" width="614" height="91" viewBox="0 0 614 91" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M305.841 1H308.158H612.155L570.191 65.3824C560.424 80.3679 539.971 90 517.402 90H308.158H305.841H96.5982C74.0287 90 53.5765 80.3679 43.8091 65.3824L1.84545 1H305.841Z"
+                            stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <div class="help__sub-info">
+                        <div class="help__sub-left help__sub-left-main">
+                            <h3 class="help__sub-left-title">Преимущества и функции:</h3>
+                            <ul class="help__sub-list reset-list mb-2">
+                                <li class="help__sub-item">- Приоритетная поддержка</li>
+                                <li class="help__sub-item">- Скрытые ставки</li>
+                                <li class="help__sub-item">- Дополнительные специализации</li>
+                                <li class="help__sub-item">- Статистика просмотров профиля</li>
+                                <li class="help__sub-item">- Бонус к рейтингу</li>
+                                <li class="help__sub-item">- Водяные знаки для работ в портфолио</li>
+                                <li class="help__sub-item">- Заказы для вас</li>
+                                <li class="help__sub-item">- Заказы для Профилей «PRO»</li>
+                                <li class="help__sub-item">- Бизнес-консультации</li>
+                                <li class="help__sub-item">- Многое другое, узнать можно</li>
+                                <li class="help__sub-item">- Заказы для вас</li>
+                            </ul>
+                            <a class="btn btn-big" href="#">Подробнее</a>
+                        </div>
+                        <div class="help__sub-right help__sub-right-main">
+                            <ul class="help__subscribe-list reset-list">
+                                <li class="help__subscribe-item">
+                                    <div class="help__subscribe-wrap">
+                                        <span class="help__sub-cost">799 ₽ <span class="help__sub-cost-desc">за</span> 1
+                                            <span class="help__sub-cost-desc">месяц</span></span>
+                                    </div>
+                                    <a class="btn btn-big btn-sub" href="#">Купить</a>
+                                </li>
+                                <li class="help__subscribe-item ">
+                                    <div class="help__subscribe-wrap help__subscribe-wrap-sale">
+                                        <span class="help__sub-cost">1699 ₽ <span class="help__sub-cost-desc">за</span>
+                                            3 <span class="help__sub-cost-desc">месяца</span>
+                                            <span class="help__subscribe-up">2400 ₽</span>
+                                        </span>
+                                    </div>
+                                    <a class="btn btn-big btn-sub" href="#">Купить</a>
+                                </li>
+                                <li class="help__subscribe-item ">
+                                    <div class="help__subscribe-wrap help__subscribe-wrap-sale">
+                                        <span class="help__sub-cost">4000 ₽ <span class="help__sub-cost-desc">за</span>
+                                            6 <span class="help__sub-cost-desc">месяцев</span>
+                                            <span class="help__subscribe-up">4800 ₽</span>
+                                        </span>
+                                    </div>
+                                    <a class="btn btn-big btn-sub" href="#">Купить</a>
+                                </li>
+                                <li class="help__subscribe-item ">
+                                    <div class="help__subscribe-wrap help__subscribe-wrap-sale">
+                                        <span class="help__sub-cost">8000 ₽ <span class="help__sub-cost-desc">за</span>
+                                            12 <span class="help__sub-cost-desc">месяцев</span>
+                                            <span class="help__subscribe-up">9600 ₽</span>
+                                        </span>
+                                    </div>
+                                    <a class="btn btn-big btn-sub" href="#">Купить</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <div class="footer__left-wrap footer__left-wrap-l">
+                    <a href="index.html" class="header__logo header__logo-second"><img src="img/logo2.svg" alt="logo"
+                            width="198" height="70"></a>
+                    <p class="gray-text">Позвоните нам</p>
+                    <a class="link footer__tel" href="tel:+7493257055">+7(4932) 95-70-55</a>
+                </div>
+                <div class="footer__left-wrap footer__left-wrap-r">
+                    <p class="gray-text adress">153012, Ивановская обл, Иваново г, Сакко ул, дом 39, помещение 1001А.
+                    </p>
+                    <p class="gray-text mail"><a href="mailto:info@inkoch.ru">info@inkoch.ru</a></p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <nav class="nav">
+                    <ul class="footer__list reset-list">
+                        <li class="footer__item main-footer-item">
+                            Информация
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">О сайте</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Оплата</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list reset-list">
+                        <li class="footer__item main-footer-item">
+                            Помощь
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Помощь</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Правила использования сайта</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Условия оферты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Правила защиты ПД</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list reset-list">
+                        <li class="footer__item main-footer-item">
+                            Аккаунт
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Профиль</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Избранное</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container footer__container footer__container-bottom">
+                <p class="footer__copyright gray-text">© 2023 «inkoch»</p>
+                <div class="footer__cookie">Мы используем cookies, чтобы вам было удобно работать с сайтом</div>
+                <div class="footer__it gray-text">
+                    <p>Разработка сайта: <a class="link" href="https://moovix.ru/" target="_blank">Moovix.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/tabs.js"></script>
+    <script defer src="assets/js/burger.js"></script>
+</body>
+
+</html>

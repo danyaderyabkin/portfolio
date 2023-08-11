@@ -1,0 +1,242 @@
+.hero {
+    padding-top: 115px;
+    padding-bottom: 460px;
+    position: relative;
+    color: var(--white);
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__bg {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero__container {
+    margin-bottom: 120px;
+}
+
+.font-inria {
+    font-family: 'Inria Serif', 'serif';
+    text-transform: uppercase;
+}
+
+.hero__btn {
+    font-size: 35px;
+    padding: 40px 70px;
+    line-height: 1.5;
+}
+
+.hero__list {
+    display: flex;
+    margin-top: var(--gap2);
+    margin-bottom: var(--gap);
+    align-items: center;
+}
+
+.hero__item {
+    background-color: var(--white);
+    border-radius: 15px;
+    border: 1px solid var(--green);
+    color: var(--green);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 20px 20px 20px 25px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__item-black {
+    background: #181818cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 25px;
+    color: var(--whiteB);
+    padding: 0 40px;
+    max-width: 470px;
+    min-height: 550px;
+}
+
+.hero__item:not(:last-child) {
+    margin-right: var(--gap2);
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: var(--gap);
+    text-align: center;
+    line-height: 36px;
+    font-weight: 400;
+    font-size: 28px;
+    border-bottom: 1px solid var(--green);
+}
+
+.hero__building {
+    display: flex;
+    border: 1px solid var(--green);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: var(--gip);
+    width: 100%;
+}
+
+.hero__building-img {
+    border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    -o-border-radius: 15px 0 0 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.hero__title-info {
+    margin-top: 5px;
+}
+
+.hero__building-info {
+    margin-left: var(--gip);
+    margin-right: var(--gip);
+}
+
+.hero__building-text {
+    margin-top: 5px;
+}
+
+.hero__text {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.hero__title-info {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero__item-black-border {
+    position: relative;
+    padding: var(--gip) 0;
+    border-top: 3px solid var(--green);
+    border-bottom: 3px solid var(--green);
+}
+
+.hero-green-link {
+    display: flex;
+    line-height: 1;
+    padding: 7px 23px;
+    margin-top: auto;
+}
+
+.hero-green-link svg{
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+@media (max-width: 1440px) {
+
+    .hero__container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .hero__item:not(:last-child) {
+        margin-right: var(--gip);
+    }
+
+    .hero__item  {
+        min-width: auto;
+    }
+}
+@media (max-width: 1280px) {
+
+    .hero {
+        padding-top: var(--gip);
+    }
+
+    .hero__list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: var(--gip);
+    }
+
+    .hero__item {
+        width: 45%;
+    }
+
+    .hero__item.hero__item-black {
+        order: 3;
+        margin-top: var(--gap);
+        margin-right: 0;
+        max-width: none;
+        width: 93%;
+        min-height: 350px;
+    }
+
+    .hero__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+}
+@media (max-width: 1023.98px) {
+
+    .hero__list {
+        align-items: stretch;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero__list {
+        margin-top: 0;
+    }
+
+    .hero__item {
+        width: 100%;
+        margin-bottom: var(--gip);
+    }
+
+    .hero__item.hero__item-black {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .hero__container {
+        padding-right: var(--gip);
+        padding-left: var(--gip);
+    }
+
+
+}
+@media (max-width: 576px) {
+
+    .hero__btn {
+        font-size: 35px;
+        padding: 0px 15px;
+        line-height: 1.5;
+    }
+
+}

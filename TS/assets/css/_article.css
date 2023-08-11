@@ -1,0 +1,271 @@
+.article {
+    padding-bottom: var(--gap);
+}
+
+.heading {
+    padding-bottom: var(--gap);
+}
+
+.heading__info {
+    display: flex;
+    align-items: center;
+    color: var(--graytext);
+}
+
+.heading__info svg {
+    margin-right: 5px;
+}
+
+.heading__info .gray-text {
+    margin-right: var(--gip);
+}
+
+.author {
+    padding-top: var(--gip);
+    padding-bottom: var(--gap);
+}
+
+.author__border {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #D9D9D9;
+    padding-top: var(--gip);
+}
+
+.author__border .gray-text {
+    display: flex;
+}
+
+.author__border .gray-text:not(:last-child) {
+    margin-right: var(--gip);
+}
+
+.author__name {
+    margin-left: 4px;
+    color: var(--black);
+}
+
+.author__border-cat {
+    margin-right: 4px;
+}
+
+.author__category {
+    color: var(--blue);
+}
+
+.link {
+    transition: color var(--short);
+}
+
+.link:focus-visible {
+    color: var(--hover);
+}
+
+.link:active {
+    color: var(--blue);
+}
+
+.recommend__link:active {
+    color: var(--black);
+}
+
+.author__category:active {
+    color: var(--black);
+}
+
+.recommend {
+    background-color: var(--gray);
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.recommend__heading {
+    font-weight: 400;
+    margin-bottom: var(--gap);
+    margin-top: 5px;
+}
+
+.recommend__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommend__item {
+    width: 30%;
+}
+
+.recommend__link-img {
+    display: flex;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+.recommend__img {
+    border-radius: 10px;
+}
+
+
+.recommend__img {
+    box-shadow: 0px 5px 9px -1px #f0f0f0;
+}
+
+.main-artikle {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+
+.main-artikle span {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--graytext);
+}
+
+.article--container {
+    max-width: 820px;
+}
+
+.quote__wrap {
+    background-color: var(--gray);
+    padding: var(--gap) var(--gap2);
+    border-radius: 5px;
+    position: relative;
+    font-size: 16px;
+}
+
+.quote__wrap::before {
+    position: absolute;
+    content: '';
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/quote.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article__container.article--container p {
+    margin-bottom: var(--gap);
+}
+
+.figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure .article__photo {
+    border-radius: var(--border);
+}
+
+.article figcaption {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    color: var(--graytext);
+    text-align: center;
+    margin-bottom: var(--gip);
+}
+
+blockquote {
+    margin: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+    .recommend__list {
+        flex-direction: column;
+    }
+
+    .recommend__item {
+        width: 80%;
+    }
+
+ 
+
+}
+
+@media (max-width: 768px) {
+    .recommend__list {
+        flex-direction: column;
+    }
+
+    .figure {
+        margin: 0 -15px;
+    }
+
+    .figure .article__photo {
+        border-radius: 0px;
+    }
+
+    .recommend__item {
+        width: auto;
+    }
+
+    .author__border {
+        font-size: 14px;
+    }
+
+   
+    .quote.quote__wrap {
+        margin: 0 -40px;
+        border-radius: 0;
+    }
+
+    .quote__wrap {
+        padding: var(--gap) 35px var(--gap) var(--gap);
+    }
+
+
+
+    .quote__wrap::before {
+        right: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .main-artikle {
+        padding: 0;
+    }
+
+    .content__img {
+        border-radius: 0;
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+
+    .heading__info .gray-text {
+        font-size: 14px;
+    }
+
+    .quote.quote__wrap {
+        margin: 0 -15px;
+        border-radius: 0;
+    }
+
+    .main-artikle .content__banner {
+        border-radius: 0;
+    }
+
+    .main-artikle .content__text {
+        border-radius: 0;
+    }
+
+    .main-artikle .content__banner {
+        min-height: 200px;
+        height: calc(100vw - 180px);
+    }
+
+}

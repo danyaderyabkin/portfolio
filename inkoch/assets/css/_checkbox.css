@@ -1,0 +1,112 @@
+.form_radio_btn {
+    display: inline-block;
+    margin-bottom: var(--gip);
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding: 7px 15px 7px 40px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 13px;
+    min-width: 240px;
+    user-select: none;
+    position: relative;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    transition: var(--short);
+    -webkit-transition: var(--short);
+    -moz-transition: var(--short);
+    -ms-transition: var(--short);
+    -o-transition: var(--short);
+}
+
+.form_radio_btn label::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transform: translateY(-50%);
+    transition: var(--short);
+    -webkit-transition: var(--short);
+    -moz-transition: var(--short);
+    -ms-transition: var(--short);
+    -o-transition: var(--short);
+}
+
+
+.form_radio_btn input[type=radio]:checked+label {
+    background: var(--hover);
+}
+
+.form_radio_btn input[type=radio]:checked+label::before {
+    background: var(--white);
+}
+
+.form_radio_btn input[type=radio]:disabled+label {
+    background: #efefef;
+    color: #666;
+}
+
+
+.filename {
+    background: var(--white);
+    border: 0;
+}
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: var(--white);
+    border-radius: 18px;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-upload span {
+    display: flex;
+    align-items: center;
+    color: var(--green);
+    font-size: var(--minfs);
+    line-height: 24px;
+}
+
+.file-upload span svg{
+    margin-left: 14px;
+}

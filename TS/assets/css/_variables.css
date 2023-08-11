@@ -1,0 +1,33 @@
+:root {
+  --default-fs: 18px;
+  --default-lh: 32px;
+  --reg: 400;
+  --border: 10px;
+  --gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.65) 100%);
+
+  /* Цвета */
+  --black: #000000;
+  --gray: #F4F4F4;
+  --graytext: #7A7A7A;
+  --hover: #808AA6;
+  --white: #ffffff;
+  --blue: #0500FF;
+
+  /* контейнер */
+  --container-max: 1240px;
+  --container-padding: 40px;
+  --gip: 15px;
+  --gap: 25px;
+  --gap2: 50px;
+
+  /* анимация */
+  --short: .3s;
+  --shortB: .6s;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 15px;
+    --default-lh: 28px;
+  }
+}

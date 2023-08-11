@@ -1,0 +1,121 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 20px 39px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: background-color var(--short);
+  background-color: var(--green);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.btn:focus-visible {
+  background-color: var(--hover);
+}
+
+.btn:active {
+  background-color: var(--green);
+}
+
+
+.reset-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.header__reg {
+  position: absolute;
+  background-color: var(--green);
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: inherit;
+  color: var(--white);
+  transition: var(--short);
+  -webkit-transition: var(--short);
+  -moz-transition: var(--short);
+  -ms-transition: var(--short);
+  -o-transition: var(--short);
+  opacity: 0;
+  visibility: visible;
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+}
+
+
+.btn-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.btn-big {
+  font-size: 30px;
+}
+
+
+@media (max-width: 1280px) {
+  .header__reg {
+    position: unset;
+    opacity: 1;
+    visibility: visible;
+    margin-top: var(--gip);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 13px 27px;
+    line-height: 15px;
+  }
+
+  .btn-big {
+    font-size: 20px;
+  }
+}
+
+@media (any-hover: hover) {
+  .btn:hover:not(:active) {
+    background-color: var(--hover);
+  }
+
+  .btn-wrap:hover .header__auth{
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+  .btn-wrap:hover .header__auth ~ a {
+    opacity: 1;
+    visibility: visible;
+  }
+}

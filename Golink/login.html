@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h2 class="visually-hidden">Авторизация</h2>
+    <section class="login">
+        <div class="login__container">
+            <a class="login__logo header__logo logo" href="index.html">
+                <img src="img/GoLink.svg" alt="logo" width="160" height="55">
+            </a>
+            <h1 class="login__title">Авторизация</h1>
+            <form class="form__login">
+                <p class="login__attach">Ваш E-mail</p>
+                <label class="login__label-email">
+                    <input class="form__input input-login" type="text">
+                </label>
+                <a href="register.html" class="mobile-register more-btn">У Вас нет аккаунта?</a>
+                <p class="login__attach">Пароль</p>
+                <label class="login__label-pass">
+                    <input class="form__input input-login to-margin" type="password" placeholder="Минимум 6 символов">
+                </label>
+                <div class="form__wrapper">
+                    <label class="feedback__label">
+                        <input type="checkbox" name="personal" class="feedback__chekbox visually-hidden">
+                        <span class="feedback__visual-check"></span>
+                        <span class="feedback__check-text">Запомнить меня</span>
+                    </label>
+                    <a class="forget-pass more-btn" href="#">
+                        Забыли пароль?
+                    </a>
+                </div>
+                <button class="btn login__btn reset-btn">Авторизация</button>
+            </form>
+            <p class="copyright">© 2023 <a href="index.html" class="forget-pass more-btn">Golink</a>. Все права защищены
+            </p>
+        </div>
+        <div class="login__container login__blue">
+            <h2 class="large">Нет аккаунта на GoLink?</h2>
+            <p class="login__text">Начните свою маркетинговую кампанию прямо сейчас и эффективно обращайтесь к своим
+                клиентам.</p>
+            <a class="login-link header__register main-link" href="register.html">Регистрация</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

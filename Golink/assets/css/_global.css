@@ -1,0 +1,137 @@
+@import url('_variables.css');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--default-fs);
+    line-height: var(--default-lh);
+    color: var(--dark);
+    background-color: var(--white);
+    min-width: 320px;
+}
+
+.h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+.reset-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 0px;  
+    height: 0px;  
+    margin: -1px;  
+    border: 0;  
+    padding: 0;
+    clip: rect(0, 0, 0, 0);  
+    overflow: hidden;
+}
+
+
+.main-link {
+    padding: var(--gip) var(--gap);
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 8px;
+    transition: var(--short);
+    cursor: pointer;
+    outline: none;
+}
+.main-link:hover {
+    background-color: var(--greenlight);
+}
+.main-link:focus-visible:not(:active) {
+    outline: none;
+    background-color: var(--greenlight);
+    box-shadow: 0px 0px 1px 2px #ccc;
+}
+.main-link:active {
+    background-color: var(--greenbl);
+}
+
+.text {
+    margin-bottom: var(--gap2);
+    font-size: var(--font-medplus);
+    max-width: 540px;
+}
+
+.title {
+    font-size: 52px;
+    line-height: 1;
+    margin-bottom: var(--gap2);
+    margin-top: 160px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: var(--gap);
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: var(--gip);
+        padding-left: var(--gip);
+    }
+   
+}
+@media (max-width: 576px) {
+
+    .title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1;
+        margin-top: 40px;
+    }
+
+    .main-link {
+        padding: 6px 8px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+    
+}
+

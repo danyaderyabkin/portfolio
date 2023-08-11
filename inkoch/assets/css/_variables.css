@@ -1,0 +1,61 @@
+:root {
+  /* Шрифты */
+  --default-fs: 16px;
+  --minfs: 12px;
+  --default-lh: 32px;
+
+  /* Цвета */
+  --black: #000000;
+  --blackB: #000000;
+  --white: #ffffff;
+  --green: #34A853;
+  --greenS: #198754;
+  --greenB: #000000;
+  --gray: #696969;
+  --hover: #77D18F;
+  --whiteB: #fff;
+  --inputBg: #F5F7FC;
+  --grayCheck: #cccccc;
+  --bgMain: #ffffffb5;
+  --arrowN: url(../../img/next.png);
+  --arrowP: url(../../img/prev.png);
+  --regUser: url(../../img/regi.png);
+
+  /* контейнер */
+  --container-max: 1870px;
+  --container-padding: 50px;
+  --whiteBg: url(../../img/scc.svg);
+  --whiteHeader: url(../../img/bgH.svg);
+
+  /* отступы */
+  --gap: 25px;
+  --gap2: 50px;
+  --gip: 15px;
+
+  /* анимация */
+  --short: .3s;
+}
+
+[dark] {
+  --white: #333;
+  --whiteBg: url(../../img/bcs.svg);
+  --whiteHeader: url(../../img/bgb.svg);
+  --arrowN: url(../../img/nextB.png);
+  --arrowP: url(../../img/prevB.png);
+  --regUser: url(../../img/IMAGEB.png);
+  --greenB: #34A853;
+  --gray: #979797;
+  --whiteB: #aeaeae;
+  --inputBg: #9d9d9d;
+  --blackB: #aeaeae;
+  --grayCheck: #868686;
+  --bgMain: #212121b5;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 15px;
+    --default-fs: 14px;
+    --default-lh: 28px;
+  }
+}

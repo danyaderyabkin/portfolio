@@ -1,0 +1,199 @@
+.login {
+    display: flex;
+    height: 100vh;
+}
+
+.login__container {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__login {
+    width: 60%;
+    max-width: 440px;
+}
+
+.login__blue {
+    background: var(--blue);
+    color: var(--white);
+    text-align: center;
+}
+
+.login__logo {
+    margin-bottom: 70px;
+}
+
+.login__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: var(--gap2);
+}
+
+.login__attach {
+    font-size: var(--font-min);
+    color: #9B9B9B;
+}
+
+.login__label-email {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.login__label-email::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cg clip-path="url(%23clip0_34_29)"%3E%3Cpath d="M9.99997 -6.10352e-05C7.27646 -6.20352e-05 5.05525 2.22114 5.05525 4.94467C5.05525 7.66819 7.27646 9.88949 9.99997 9.88949C12.7235 9.88949 14.9448 7.66819 14.9448 4.94467C14.9448 2.22114 12.7235 -5.85352e-05 9.99997 -6.10352e-05ZM9.99997 1.24994C12.0479 1.24994 13.6948 2.89669 13.6948 4.94467C13.6948 6.99265 12.0479 8.63949 9.99997 8.63949C7.95201 8.63949 6.30525 6.99265 6.30525 4.94467C6.30525 2.89668 7.95201 1.24994 9.99997 1.24994ZM9.99947 10.6816C5.61189 10.6827 2.1047 14.6084 2.0858 19.3724L2.08325 19.9999H17.9166L17.914 19.3724C17.8951 14.6081 14.3875 10.6822 9.99965 10.6816H9.99947ZM9.99947 11.9316H9.99997C13.4534 11.9323 16.3341 14.8941 16.6336 18.7499H3.36657C3.66604 14.8944 6.54637 11.9327 9.99947 11.9316Z" fill="%23607D8B"/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id="clip0_34_29"%3E%3Crect width="20" height="20" fill="white"/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login__label-pass {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.login__label-pass::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cg clip-path="url(%23clip0_34_18)"%3E%3Cpath d="M9.99983 0C12.0062 0 13.7985 1.14389 14.5872 2.88255C14.6343 2.98648 14.6776 3.09205 14.7169 3.19909C14.836 3.52308 14.6699 3.88226 14.3459 4.00133C14.0219 4.1204 13.6627 3.95428 13.5436 3.63029C13.5149 3.5521 13.4833 3.47493 13.4488 3.39891C12.8637 2.10895 11.5178 1.25 9.99983 1.25C7.96935 1.25 6.32605 2.77109 6.25241 4.65935L6.24983 4.79167L6.24937 6.25H15C17.0711 6.25 18.75 7.92893 18.75 10V16.25C18.75 18.3211 17.0711 20 15 20H5C2.92893 20 1.25 18.3211 1.25 16.25V10C1.25 7.92914 2.92859 6.25034 4.99937 6.25L4.99983 4.79167C4.99983 2.1383 7.24504 0 9.99983 0ZM15 7.5H5C3.66113 7.5 2.56808 8.55248 2.50306 9.87523L2.5 10V16.25C2.5 17.5889 3.55248 18.6819 4.87522 18.7469L5 18.75H15C16.3389 18.75 17.4319 17.6975 17.4969 16.3748L17.5 16.25V10C17.5 8.66113 16.4475 7.56808 15.1248 7.50306L15 7.5ZM12.2097 10.9153C12.4538 11.1594 12.4538 11.5551 12.2097 11.7992L8.67417 15.3347C8.4301 15.5788 8.03437 15.5788 7.79029 15.3347C7.54621 15.0906 7.54621 14.6949 7.79029 14.4508L11.3258 10.9153C11.5699 10.6712 11.9656 10.6712 12.2097 10.9153Z" fill="%23607D8B"/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id="clip0_34_18"%3E%3Crect width="20" height="20" fill="white"/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input-login {
+    border: 1px solid var(--border);
+    height: auto;
+    line-height: 38px;
+}
+
+.login__label-email, .login__label-pass {
+    margin-bottom: var(--gap);
+}
+
+.form__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--gip);
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.login__btn {
+    background: var(--blue);
+    color: var(--white);
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.login__btn:hover {
+    background: linear-gradient(270deg, #00104B 0%, #07248B 100%);
+}
+
+.login__btn:focus-visible:not(:active) {
+    box-shadow: 0px 0px 1px 2px #ccc;
+}
+
+.login__btn:active {
+    background: var(--blue);
+}
+
+.large {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: var(--gap);
+    line-height: 1;
+}
+
+.login__text {
+    margin-bottom: var(--gap);
+}
+
+.login-link {
+    font-size: 24px;
+    padding: 16px;
+    width: 270px;
+}
+
+.forget-pass {
+    border-radius: 8px;
+    outline-offset: 2px;
+}
+
+.forget-pass:focus-visible {
+    outline: 2px solid var(--bluelink);
+}
+.mobile-register {
+    display: none;
+}
+
+.login__label-pass input, .login__label-email input{
+    padding: 0 15px 0 40px;
+}
+.login__logo {
+    margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+    .form__login {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .login__blue {
+        display: none;
+    }
+
+    .login__container {
+        flex-basis: 100%;
+    }
+
+    
+
+    .form__login {
+        width: 90%;
+    }
+
+    .mobile-register {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .input-login {
+        margin-bottom: 0;
+    }
+
+    .login__label-pass {
+        margin-bottom: var(--gap);
+    }
+
+    .login__label-email {
+        margin-bottom: 0;
+    }
+
+    .login__logo {
+        margin-right: 0;
+        width: 160px;
+    }
+
+}
+

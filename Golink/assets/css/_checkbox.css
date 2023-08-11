@@ -1,0 +1,50 @@
+.feedback__label {
+    line-height: 1;
+    cursor: pointer;
+    transition: color var(--short);
+  }
+
+.feedback__visual-check {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: border-color var(--short);
+  }
+
+  .feedback__visual-check:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px #367AFF;
+  }
+  
+  .feedback__visual-check::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 4px;
+    border-bottom: 2px solid #4f9c00;
+    border-left: 2px solid #4f9c00;
+    opacity: 0;
+    transition-duration: var(--short);
+    transition-property: opacity, transform;
+    transform: translate(-50%, -60%) rotate(-45deg) scale(1.8);
+  }
+  
+  .feedback__check-text {
+    vertical-align: middle;
+  }
+  
+  .feedback__chekbox:checked ~ .feedback__visual-check::before {
+    opacity: 1;
+    transform: translate(-50%, -70%) rotate(-45deg) scale(1);
+  }
+  
+  .feedback__chekbox:focus-visible ~ .feedback__visual-check {
+    box-shadow: 0px 0px 1px 1px #367AFF;
+  }
+  

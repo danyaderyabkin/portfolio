@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golink</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h2 class="visually-hidden">Лучший сервис по сокращению ссылок!</h2>
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo logo" href="#">
+                <img src="img/GoLink.svg" alt="logo" width="160" height="55">
+            </a>
+            <nav class="header__nav nav">
+                <h2 class="visually-hidden">Навигация по сайту</h2>
+                <ul class="header__list reset-list">
+                    <li class="header__item">
+                        <a class="header__link" href="#about">О сервисе</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#advant">Возможности</a>
+                    </li>
+                    <!-- <li class="header__item">
+                        <a class="header__link" href="#">Вопросы</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <div class="header__wrapper">
+                <a class="header__login" href="login.html">Вход</a>
+                <a class="header__register main-link" href="register.html">Регистрация</a>
+                <button class="reset-btn catalog__burger burger" type="button" aria-label="Открыть меню"
+                    aria-expanded="false">
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__wrapper">
+                <h1 class="title">GoLink - cервис сокращения ссылок</h1>
+                <p class="text">Самый быстрый и универсальный сокращатель ссылок. Делитесь и отслеживайте свои ссылки с
+                    легкостью!</p>
+                <form class="form" id="form" method="post">
+                    <input class="form__input" name="url" id="main-input" required type="text"
+                        placeholder="Вставьте ссылку которую хотите сократить">
+                    <button class="btn hero__btn main-link post-btn">Сократить</button>
+                    <button class="btn hero__btn main-link copy-btn visually-hidden">Скопировать</button>
+                </form>
+                <div class="ready-link">
+                    <div class="code">
+                        <img class="qr-code" src="img/qr-kod.svg" alt="QR" width="100" height="100">
+                    </div>
+                    <div class="ready-link__text">
+                        <p class="text-link">Ваша ссылка готова!</p>
+                        <p>Хотите больше возможностей?</p>
+                        <a class="register-qr more-btn" href="register.html">Регистрация
+                            <svg width="16" height="8" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.3354 4.33541C15.5207 4.15017 15.5207 3.84983 15.3354 3.66459L12.3167 0.645898C12.1315 0.460656 11.8311 0.460656 11.6459 0.645898C11.4607 0.83114 11.4607 1.13148 11.6459 1.31672L14.3292 4L11.6459 6.68328C11.4607 6.86852 11.4607 7.16886 11.6459 7.3541C11.8311 7.53934 12.1315 7.53934 12.3167 7.3541L15.3354 4.33541ZM0 4.47434H15V3.52566H0V4.47434Z"
+                                    fill="#367AFF" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__wrapper">
+                <img class="hero__img" src="img/main_page_image.png" alt="Golink">
+            </div>
+        </div>
+    </section>
+    <section class="history">
+        <h2 class="visually-hidden">История Ваших ссылок</h2>
+        <div class="history__container container">
+            <ul class="history__list reset-list ">
+                <li class="history__item visually-hidden">
+                    <p class="history__link-text">https://gwfh.mranftl.com/fonts/roboto?subsets=latin</p>
+                    <div class="history__wrapper">
+                        <span class="history__link" href="#">https://g-link.ru/ExphJUHgtd</span>
+                        <button class="history__btn main-link">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="history__more more-btn reset-btn visually-hidden">Смотреть еще
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.1604 13.6182C9.68497 14.1335 10.5484 14.1266 11.0648 13.6012L16.8864 7.67777C17.0534 7.50791 17.034 7.24975 16.8432 7.10112C16.6525 6.95249 16.3625 6.96971 16.1955 7.13957L10.3739 13.0629C10.2189 13.2206 9.99646 13.2224 9.84067 13.0694L3.79913 7.13424C3.62889 6.96701 3.33862 6.95429 3.15078 7.10585C2.96294 7.25741 2.94865 7.51584 3.11889 7.68309L9.16038 13.6182L9.1604 13.6182Z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about__container container">
+            <div class="about__image">
+                <img src="img/about.png" alt="info">
+            </div>
+            <div class="about__wrapper">
+                <h3 class="section-title">Простой инструмент для сокращения Ваших ссылок</h3>
+                <p class="about__text">Чтобы создать короткую ссылку вам необходимо вставить вашу длинную ссылку в поле
+                    и нажать кнопку «Сократить». Ваша ссылка готова, скопируйте её или просто нажмите на кнопку
+                    «Скопировать». Когда пользователь перейдёт по ссылке, то он будет переадресован на исходный сайт.
+                    Ссылки хранятся в базе и хорошо защищены. Все ваши ссылки проходят автоматическую проверку через
+                    сервисы гугл и фиштанк. </p>
+                <h3 class="section-title">Короткие ссылки</h3>
+                <p class="about__text">С помощью нашего универсального сервиса, вы сможете сделать из длинной ссылки
+                    короткую, или просто сократить или укоротить вашу длинную ссылку. Создавайте короткие ссылки,
+                    которыми с легкостью можно поделиться в комментариях или социальных сетях. Наш сервис абсолютно
+                    бесплатный и безопасный.</p>
+            </div>
+        </div>
+    </section>
+    <section class="advant" id="advant">
+        <div class="advant__container container">
+            <h3 class="advant__title section-title">Одна ссылка, бесконечные возможности.</h3>
+            <ul class="advant__list reset-list">
+                <li class="advant__item">
+                    <img src="img/advant1.png" alt="res">
+                    <h4 class="h4">Отслеживание результатов</h4>
+                    <p>Вы можете использовать данные о том, сколько людей кликнули, отказались или конвертировались</p>
+                </li>
+                <li class="advant__item">
+                    <img src="img/advant2.png" alt="res">
+                    <h4 class="h4">Делитесь ссылками</h4>
+                    <p>Вы можете использовать свои сокращенные URL-адреса в публикациях, документах, рекламе, блогах,
+                        форумах, сообщениях.</p>
+                </li>
+                <li class="advant__item">
+                    <img src="img/advant3.png" alt="res">
+                    <h4 class="h4">Выбирайте тип перехода</h4>
+                    <p>После регистрации или авторизации, вы сможете выбирать какой тип перехода ставить для вашей
+                        сокращенной ссылки.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container container">
+            <h2 class="visually-hidden">Подвал сайта</h2>
+            <div class="footer__wrapper footer__wrapper-reg">
+                <a class="footer__logo logo" href="#">
+                    <img src="img/GoLink.svg" alt="logo" width="160" height="55">
+                </a>
+                <a class="footer__register header__register main-link" href="register.html">Регистрация</a>
+            </div>
+            <div class="footer__wrapper">
+                <p class="footer__about footer__wrapper-info">Самый быстрый и универсальный сокращатель ссылок. Делитесь
+                    и отслеживайте свои ссылки с легкостью!
+                </p>
+                <nav class="footer__nav nav">
+                    <h2 class="visually-hidden">Навигация по сайту</h2>
+                    <ul class="footer__list reset-list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#about">О сервисе</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#advant">Возможности</a>
+                        </li>
+                        <!-- <li class="footer__item">
+                            <a class="footer__link" href="#">Вопросы</a>
+                        </li> -->
+                    </ul>
+                </nav>
+                <div class="footer__privacy">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Персональные данные</a>
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <div class="footer__social">
+                    <a href="#">
+                        <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5_152)">
+                                <path
+                                    d="M17.5 0C7.83494 0 0 7.83494 0 17.5C0 27.1651 7.83494 35 17.5 35C27.1651 35 35 27.1651 35 17.5C35 7.83494 27.1651 0 17.5 0Z"
+                                    fill="#40B3E0" />
+                                <path
+                                    d="M26.0152 10.0668L22.8895 25.8259C22.8895 25.8259 22.4524 26.9189 21.2503 26.3943L14.0373 20.8643L11.4145 19.5966L6.99926 18.1102C6.99926 18.1102 6.32168 17.8699 6.25606 17.3453C6.19057 16.8207 7.02114 16.5366 7.02114 16.5366L24.5725 9.65142C24.5725 9.65142 26.0152 9.01759 26.0152 10.0668Z"
+                                    fill="white" />
+                                <path
+                                    d="M13.4829 25.6488C13.4829 25.6488 13.2724 25.6291 13.01 24.7984C12.7478 23.9679 11.4145 19.5964 11.4145 19.5964L22.0153 12.8644C22.0153 12.8644 22.6273 12.4928 22.6055 12.8644C22.6055 12.8644 22.7147 12.9299 22.3869 13.2358C22.059 13.542 14.0592 20.733 14.0592 20.733"
+                                    fill="#D2E5F1" />
+                                <path
+                                    d="M16.8029 22.9845L13.9499 25.5858C13.9499 25.5858 13.7269 25.755 13.4828 25.6489L14.0292 20.8171"
+                                    fill="#B5CFE4" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5_152">
+                                    <rect width="35" height="35" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5_158)">
+                                <path
+                                    d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z"
+                                    fill="#2787F5" />
+                                <path
+                                    d="M20.0235 9.27979H14.9765C10.3705 9.27979 9.27979 10.3705 9.27979 14.9765V20.0235C9.27979 24.6295 10.3705 25.7202 14.9765 25.7202H20.0235C24.6295 25.7202 25.7202 24.6295 25.7202 20.0235V14.9765C25.7202 10.3705 24.6179 9.27979 20.0235 9.27979ZM22.5528 21.0096H21.3565C20.904 21.0096 20.7648 20.65 19.9527 19.8263C19.2449 19.1427 18.9318 19.049 18.7564 19.049C18.5127 19.049 18.443 19.1174 18.443 19.4551V20.5341C18.443 20.8243 18.35 20.9983 17.5844 20.9983C16.3198 20.9983 14.916 20.2327 13.9296 18.8053C12.4445 16.7169 12.0384 15.1505 12.0384 14.8258C12.0384 14.6518 12.1068 14.4895 12.4445 14.4895H13.6408C13.9426 14.4895 14.0584 14.6286 14.1743 14.9536C14.766 16.6592 15.7524 18.1559 16.1567 18.1559C16.3075 18.1559 16.3772 18.0875 16.3772 17.7034V15.9397C16.3307 15.1276 15.9014 15.0579 15.9014 14.768C15.9014 14.6289 16.0173 14.4895 16.2032 14.4895H18.0831C18.3384 14.4895 18.4311 14.6286 18.4311 14.9304V17.3086C18.4311 17.5639 18.5469 17.6565 18.6166 17.6565C18.7674 17.6565 18.8952 17.5636 19.1734 17.2854C20.032 16.3225 20.6469 14.8374 20.6469 14.8374C20.7283 14.6634 20.8674 14.5011 21.1692 14.5011H22.3655C22.725 14.5011 22.8064 14.6867 22.725 14.942C22.5743 15.6382 21.1125 17.7034 21.1125 17.7034C20.985 17.9122 20.9385 18.0052 21.1125 18.2369C21.2399 18.4109 21.6593 18.7705 21.9362 19.0955C22.4468 19.6766 22.8413 20.1629 22.9455 20.4993C23.0634 20.8356 22.8891 21.0096 22.5528 21.0096Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5_158">
+                                    <rect width="35" height="35" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__copyright">© 2023 Golink. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

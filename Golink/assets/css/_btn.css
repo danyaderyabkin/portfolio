@@ -1,0 +1,55 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    border: none;
+    transition: color, background-color var(--short);
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.reset-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.more-btn {
+    color: var(--bluelink);
+    align-self: center;
+    font-size: var(--font-df);
+    transition: color var(--short);
+}
+
+.more-btn svg {
+    transition: fill var(--short);
+    fill: #367AFF;
+}
+
+.more-btn:hover {
+    color: #0037ff;
+}
+
+.more-btn:hover svg {
+    fill: #0037ff;
+}
+
+.register-qr {
+    font-size: var(--font-medplus);
+}
+
+@media (max-width: 576px) {
+    .btn {
+        font-size: var(--font-med);
+    }
+    
+    .register-qr {
+        font-size: var(--font-df);
+    }
+}

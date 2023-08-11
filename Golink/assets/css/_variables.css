@@ -1,0 +1,52 @@
+:root {
+    /* шрифт */
+    --font-medplus: 20px;
+    --font-med: 18px;
+    --font-df: 16px;
+    --font-min: 14px;
+    --font-mm: 12px;
+    --default-lh: 28px;
+
+    /* Цвета */
+
+    --black: #000000;
+    --greenbl: #1a9a44;
+    --green: #6EC18A;
+    --greenlight: #70dd94;
+    --border: #dddddd;
+    --light: #f4f4f4;
+    --megalight: #f9f9f9;
+    --white: #ffffff;
+    --bluelink: #367AFF;
+    --turq: #00ADA3;
+    --blue: linear-gradient(90deg, #00104B 0%, #07248B 100%);
+    ;
+    --bluehov: #3b63f5;
+
+    /* контейнер */
+
+    --container-min: 1200px;
+    --container: 1440px;
+    --container-padding: 25px;
+
+    /* отступы */
+
+    --gip: 10px;
+    --gap: 25px;
+    --gap2: 45px;
+
+    /* анимация */
+
+    --short: .3s;
+
+
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-medplus: 18px;
+        --font-med: 16px;
+        --font-df: 14px;
+        --font-min: 12px;
+    }
+}

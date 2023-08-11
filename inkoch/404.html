@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Inkoch</title>
+</head>
+
+<body>
+
+  <header class="header-second">
+
+    <a href="index.html" class="header__logo header__logo-second">
+        <img src="img/logo2.svg" alt="logo">
+    </a>
+    <div class="container header__container js-menu-wrap">
+        <label class="switch dark-label">
+            <input class="visually-hidden" id="dark-theme" type="checkbox">
+            <span class="slider"></span>
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_827_14)">
+                    <path
+                        d="M12.8066 0.59375C13.799 2.06277 14.3285 3.79539 14.3269 5.56819C14.3269 10.5263 10.2639 14.5457 5.25142 14.5457C3.61265 14.5487 2.00346 14.1092 0.59375 13.2736C2.13988 16.3171 5.32267 18.4062 9.00036 18.4062C14.1951 18.4062 18.406 14.2408 18.406 9.10219C18.406 5.30427 16.104 2.03983 12.8066 0.59375Z"
+                        fill="currentColor" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_827_14">
+                        <rect width="19" height="19" fill="currentColor" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </label>
+        <nav class="nav">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
+            <ul class="nav__list reset-list">
+                <li class="nav__item">
+                    <a class="nav__link main-link" href="#">Проекты</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link main-link" href="#">Заказы</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link main-link" href="#">Конкурсы</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link main-link" href="#">Исполнители</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link main-link" href="#">Заказчики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link main-link" href="#">Помощь</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-wrap">
+            <a class="btn header__auth" href="auth.html">
+                Авторизация
+            </a>
+            <a class="btn header__reg" href="register.html">Регистрация</a>
+        </div>
+    </div>
+    <button class="header__burger hamburger hamburger--collapse js-burger reset-btn" type="button">
+        <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+        </span>
+    </button>
+</header>
+
+  <main>
+    <section class="not-found">
+        <div class="not-found__container container">
+            <div class="not-found__wrap">
+                <h1 class="not-found__title">404 <span class="not-found__error">Error</span></h1>
+                <p class="text-center">Приносим наши извинения, но в данный момент сайт не работает.</p>
+            </div>
+            <a class="main-link nf-link" href="index.html">На главную</a>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__left">
+            <div class="footer__left-wrap footer__left-wrap-l">
+                <a href="index.html" class="header__logo header__logo-second"><img src="img/logo2.svg" alt="logo"
+                        width="198" height="70"></a>
+                <p class="gray-text">Позвоните нам</p>
+                <a class="link footer__tel" href="tel:+7493257055">+7(4932) 95-70-55</a>
+            </div>
+            <div class="footer__left-wrap footer__left-wrap-r">
+                <p class="gray-text adress">153012, Ивановская обл, Иваново г, Сакко ул, дом 39, помещение 1001А.
+                </p>
+                <p class="gray-text mail"><a href="mailto:info@inkoch.ru">info@inkoch.ru</a></p>
+            </div>
+        </div>
+        <div class="footer__right">
+            <nav class="nav">
+                <ul class="footer__list reset-list">
+                    <li class="footer__item main-footer-item">
+                        Информация
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">О сайте</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Оплата</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="footer__list reset-list">
+                    <li class="footer__item main-footer-item">
+                        Помощь
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Помощь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Правила использования сайта</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Условия оферты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Правила защиты ПД</a>
+                    </li>
+                </ul>
+                <ul class="footer__list reset-list">
+                    <li class="footer__item main-footer-item">
+                        Аккаунт
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Профиль</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="#">Избранное</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container footer__container footer__container-bottom">
+            <p class="footer__copyright gray-text">© 2023 «inkoch»</p>
+            <div class="footer__cookie">Мы используем cookies, чтобы вам было удобно работать с сайтом</div>
+            <div class="footer__it gray-text">
+                <p>Разработка сайта: <a class="link" href="https://moovix.ru/" target="_blank">Moovix.ru</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/tabs.js"></script>
+</body>
+
+</html>

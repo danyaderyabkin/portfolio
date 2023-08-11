@@ -1,0 +1,28 @@
+.redaction-heading {
+    text-align: center;
+}
+
+.article-redaction {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.article-redaction {
+    text-align: center;
+}
+
+.article-redaction .recommend__heading {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.article__upper {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.article-wrap {
+    margin-bottom: var(--gap2);
+}

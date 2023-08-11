@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TECHNO SOUP</title>
+</head>
+
+<body>
+
+
+    <h1 class="visually-hidden">Дарова</h1>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__search-container">
+                <div class="header__search-wrap">
+                    <form class="header__search-form" action="post">
+                        <input class="header__search-input" type="search" placeholder="Поиск">
+                    </form>
+                </div>
+            </div>
+            <button class="btn reset-btn header__search header__close burger-close hide">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                        d="M20.53 4.53l-1.06-1.06L12 10.94 4.53 3.47 3.47 4.53 10.94 12l-7.47 7.47 1.06 1.06L12 13.06l7.47 7.47 1.06-1.06L13.06 12l7.47-7.47z">
+                    </path>
+                </svg>
+            </button>
+            <button class="burger" type="button">
+                <span class="burger-span burger-span-1"></span>
+                <span class="burger-span"></span>
+                <span class="burger-span burger-span-3"></span>
+            </button>
+            <a class="header__logo logo" href="/">
+                <img src="img/logo.png" alt="logo" width="110" height="55">
+            </a>
+            <nav class="nav">
+                <ul class="reset-list header__nav">
+                    <h2 class="visually-hidden">Навигация по сайту</h2>
+                    <li class="header__item">
+                        <a class="header__link" href="stati.html">
+                            Статьи
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="news.html">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="redaction.html">
+                            О Нас
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button id="header__search" class="btn reset-btn header__search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22 21L16.16 15.1C17.4717 13.5158 18.1229 11.4872 17.9782 9.43554C17.8336 7.38385 16.9044 5.46669 15.3834 4.08213C13.8624 2.69758 11.8666 1.95201 9.81041 2.00025C7.75419 2.0485 5.79556 2.88684 4.3412 4.3412C2.88683 5.79556 2.04849 7.7542 2.00025 9.81041C1.95201 11.8666 2.69757 13.8624 4.08213 15.3834C5.46668 16.9043 7.38385 17.8336 9.43554 17.9782C11.4872 18.1229 13.5158 17.4717 15.1 16.16L21 22L22 21ZM3.50002 10C3.50002 8.71445 3.88124 7.45774 4.59547 6.38882C5.3097 5.3199 6.32486 4.48678 7.51258 3.99481C8.7003 3.50284 10.0072 3.37412 11.2681 3.62492C12.529 3.87572 13.6872 4.49479 14.5962 5.40383C15.5053 6.31287 16.1243 7.47106 16.3751 8.73194C16.6259 9.99281 16.4972 11.2997 16.0052 12.4874C15.5133 13.6752 14.6801 14.6903 13.6112 15.4046C12.5423 16.1188 11.2856 16.5 10 16.5C8.27693 16.4974 6.62516 15.8117 5.40675 14.5933C4.18833 13.3749 3.50267 11.7231 3.50002 10Z"
+                        fill="currentColor" />
+                </svg>
+            </button>
+            <button id="header__close" class="btn reset-btn header__search header__close hide">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                        d="M20.53 4.53l-1.06-1.06L12 10.94 4.53 3.47 3.47 4.53 10.94 12l-7.47 7.47 1.06 1.06L12 13.06l7.47 7.47 1.06-1.06L13.06 12l7.47-7.47z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+
+        <section class="heading">
+            <div class="container article--container">
+                <h2 class="main-heading">Стартап Alef Aeronautics наконец сможет взлететь</h2>
+                <div class="heading__info">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22_577)">
+                            <path
+                                d="M9 0C4.02975 0 0 4.02919 0 9C0 13.9708 4.02919 18 9 18C13.9708 18 18 13.9708 18 9C18 4.02919 13.9708 0 9 0ZM9 16.893C4.6575 16.893 1.125 13.3425 1.125 9C1.125 4.6575 4.6575 1.125 9 1.125C13.3425 1.125 16.875 4.6575 16.875 9C16.875 13.3425 13.3425 16.893 9 16.893ZM9.5625 8.77162V3.375C9.5625 3.0645 9.3105 2.8125 9 2.8125C8.6895 2.8125 8.4375 3.0645 8.4375 3.375V9C8.4375 9.15919 8.50387 9.30206 8.61075 9.40444C8.62031 9.41569 8.62762 9.4275 8.63775 9.43762L11.4216 12.222C11.6409 12.4414 11.997 12.4414 12.2169 12.222C12.4369 12.0026 12.4363 11.646 12.2169 11.4261L9.5625 8.77162Z"
+                                fill="currentColor" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22_577">
+                                <rect width="18" height="18" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p class="gray-text">2 часа назад</p>
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_97_4)">
+                            <path
+                                d="M12.5844 7.53305C9.99609 7.53305 7.89687 9.5483 7.89687 12.0331C7.89687 14.5178 9.99609 16.5331 12.5844 16.5331C15.1727 16.5331 17.2719 14.5186 17.2719 12.0331C17.2719 9.54755 15.1734 7.53305 12.5844 7.53305ZM12.5844 15.0331C10.8609 15.0331 9.42344 13.6546 9.42344 12.0001C9.42344 10.3456 10.825 9.00005 12.5484 9.00005C14.2719 9.00005 15.6734 10.3456 15.6734 12.0001C15.6734 13.6546 14.3078 15.0331 12.5844 15.0331ZM24.9922 11.8261C24.9828 11.7886 24.9875 11.7481 24.9758 11.7113C24.9711 11.6956 24.9602 11.6866 24.9547 11.6731C24.9461 11.6521 24.9484 11.6266 24.9367 11.6063C22.6641 6.61131 17.7672 3.7373 12.5484 3.7373C7.32969 3.7373 2.33438 6.6068 0.0609375 11.6018C0.0515625 11.6228 0.053125 11.6446 0.0445313 11.6686C0.0390625 11.6836 0.028125 11.6911 0.0226562 11.7053C0.0109375 11.7428 0.015625 11.7826 0.0078125 11.8208C-0.00625 11.8883 -0.0195312 11.9543 -0.0195312 12.0226C-0.0195312 12.0908 -0.00625 12.1553 0.0078125 12.2236C0.015625 12.2611 0.0101562 12.3023 0.0226562 12.3376C0.0273437 12.3548 0.0390625 12.3616 0.0445313 12.3766C0.0523438 12.3968 0.0507812 12.4223 0.0609375 12.4433C2.33438 17.4368 7.28125 20.2643 12.5 20.2643C17.7187 20.2643 22.6648 17.4428 24.9375 12.4478C24.9492 12.4261 24.9469 12.4043 24.9555 12.3803C24.9609 12.3676 24.9711 12.3578 24.9758 12.3428C24.9875 12.3061 24.9844 12.2663 24.9922 12.2273C25.0062 12.1598 25.0187 12.0946 25.0187 12.0248C25.0187 11.9588 25.0055 11.8936 24.9914 11.8253L24.9922 11.8261ZM12.5 18.7643C8.07422 18.7643 3.71719 16.5248 1.57656 12.0218C3.69687 7.53455 8.11172 5.23655 12.5484 5.23655C16.9844 5.23655 21.3008 7.5368 23.4219 12.0263C21.3023 16.5128 16.9375 18.7643 12.5 18.7643Z"
+                                fill="currentColor" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_97_4">
+                                <rect width="25" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p class="gray-text">11983 просмотров</p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container content__container article--container main-artikle">
+                <div href="statiya.html" class="content__banner article__banner ">
+                    <img class="content__img" src="img/urtopia-e-bike-1024x512-1.jpeg" alt="banner">
+                </div>
+                <span>Источник: Новости</span>
+            </div>
+        </section>
+        <section class="article">
+            <div class="container article__container article--container">
+                <p>Вопреки прогнозам скептиков, спонсируемый SpaceX стартап Alef Aeronautics стал первой в истории
+                    компанией, которая получила разрешение Федерального авиационного управления США (FAA) на
+                    тестирование <a href="news.html" class="author__category link">летающего</a> электромобиля Model A.
+                </p>
+                <figure class="figure">
+                    <img class="article__photo" src="img/iphone.jpg" alt="banner">
+                </figure>
+                <figcaption>Источник: Новости</figcaption>
+                <p>Пожалуй, самое смелое и интересное в проекте — это положение корпуса в воздухе: после вертикального
+                    взлёта Model A как бы ложится набок, превращаясь в своеобразный биплан. Согласно <a href="news.html"
+                        class="author__category link">анонсам</a>, модель
+                    будет способна перевозить до двух пассажиров с дальностью полёта до 177 километров и запасом хода по
+                    дорогам до 322 километров.</p>
+                <figure class="figure">
+                    <img class="article__photo" src="img/vert.avif" alt="banner">
+                </figure>
+                <figcaption>Источник: Новости</figcaption>
+                <p>Разрешение Федерального авиационного управления США (FAA) на тестирование <a href="news.html"
+                        class="author__category link">летающего</a> электромобиля
+                    Model A.</p>
+                <blockquote class="quote quote__wrap">
+                    <p>Мы стремимся изменить ситуацию с нашими батареями, которые, как известно, слишком большие,
+                        тяжёлые и
+                        дорогие в производстве. Мы говорим о потенциале вдвое сократить все эти факторы -
+                        <a class="author__category link" href="#">Кэйдзи Кайта</a>
+                    </p>
+                </blockquote>
+            </div>
+        </section>
+        <section class="author">
+            <div class="container author__container article--container">
+                <div class="author__border">
+                    <div class="gray-text">
+                        <p>Автор:</p>
+                        <a href="author.html" class="author__name link">Дмитрий Шумков</a>
+                    </div>
+                    <div class="gray-text">
+                        <p class="author__border-cat">Категория:</p>
+                        <a href="news.html" class="author__category link">Новости</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommend">
+            <div class="container recommend__container">
+                <h2 class="recommend__heading">Сегодня читают</h2>
+                <ul class="recommend__list reset-list">
+                    <li class="recommend__item">
+                        <a class="recommend__link-img" href="#">
+                            <img class="recommend__img" src="img/nothing-phone-2-2.jpeg" alt="statiya">
+                        </a>
+                        <a class="recommend__link link gray-text " href="stati.html">
+                            Статьи
+                        </a>
+                        <a class="recommend__link link" href="statiya.html">
+                            <h3 class="recommend__heading">Почему iPhone 14 Pro Max пожирает батарейку</h3>
+                        </a>
+                    </li>
+                    <li class="recommend__item">
+                        <a class="recommend__link-img" href="#">
+                            <img class="recommend__img" src="img/iphone.jpg" alt="statiya">
+                        </a>
+                        <a class="recommend__link gray-text" href="stati.html">
+                            Статьи
+                        </a>
+                        <a class="recommend__link link" href="statiya.html">
+                            <h3 class="recommend__heading">Почему iPhone 14 Pro Max пожирает батарейку</h3>
+                        </a>
+                    </li>
+                    <li class="recommend__item">
+                        <a class="recommend__link-img" href="#">
+                            <img class="recommend__img" src="img/1598.jpg" alt="statiya">
+                        </a>
+                        <a class="recommend__link gray-text" href="stati.html">
+                            Статьи
+                        </a>
+                        <a class="recommend__link link" href="statiya.html">
+                            <h3 class="recommend__heading">Почему iPhone 14 Pro Max пожирает батарейку</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <a class="footer__logo logo" href="/">
+                    <img src="img/logo-f.png" alt="logo" width="110" height="55">
+                </a>
+                <p class="gray-text">Рассказываем о важных событиях в мире технологий</p>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_46)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.3411 6.96683C27.5487 6.32744 27.3411 5.86244 26.4218 5.86244H23.3675C22.5964 5.86244 22.2406 6.26932 22.033 6.70526C22.033 6.70526 20.4614 10.4253 18.2669 12.8375C17.5552 13.535 17.229 13.7675 16.8435 13.7675C16.636 13.7675 16.3691 13.535 16.3691 12.8957V6.93776C16.3691 6.18213 16.1318 5.83337 15.4795 5.83337H10.6755C10.201 5.83337 9.90448 6.18213 9.90448 6.53088C9.90448 7.25745 11.0017 7.43183 11.1203 9.46623V13.8838C11.1203 14.8429 10.9424 15.0172 10.5569 15.0172C9.51898 15.0172 6.99837 11.2681 5.48601 6.99589C5.18947 6.15307 4.89293 5.83337 4.12192 5.83337H1.03789C0.148271 5.83337 0 6.24025 0 6.6762C0 7.46089 1.03789 11.4134 4.83362 16.6448C7.35422 20.2195 10.9424 22.1376 14.1747 22.1376C16.1318 22.1376 16.3691 21.7017 16.3691 20.9751V18.2723C16.3691 17.4004 16.547 17.2551 17.1697 17.2551C17.6146 17.2551 18.4152 17.4876 20.2241 19.2023C22.2999 21.2367 22.6558 22.1667 23.8123 22.1667H26.8666C27.7563 22.1667 28.1714 21.7308 27.9342 20.8879C27.6673 20.0451 26.6591 18.8245 25.3543 17.3713C24.6426 16.5576 23.575 15.6566 23.2488 15.2207C22.804 14.6394 22.9226 14.4069 23.2488 13.8838C23.2192 13.8838 26.9556 8.7106 27.3411 6.96683Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_46">
+                                    <rect width="28" height="28" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <a class="footer__social-link" href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.9399 4.85313C26.147 5.17586 27.0958 6.11752 27.4165 7.31117C28 9.47743 28 14.0001 28 14.0001C28 14.0001 28 18.5227 27.4165 20.6889C27.0913 21.887 26.1425 22.8287 24.9399 23.147C22.7572 23.7261 14 23.7261 14 23.7261C14 23.7261 5.24722 23.7261 3.06013 23.147C1.85301 22.8242 0.904232 21.8826 0.583519 20.6889C0 18.5227 0 14.0001 0 14.0001C0 14.0001 0 9.47743 0.583519 7.31117C0.908686 6.1131 1.85746 5.17144 3.06013 4.85313C5.24722 4.27399 14 4.27399 14 4.27399C14 4.27399 22.7572 4.27399 24.9399 4.85313ZM18.4766 14L11.2027 18.1689V9.83104L18.4766 14Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a class="footer__social-link" href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.327 4.638C3 5.28 3 6.12 3 7.8V20.2C3 21.88 3 22.72 3.327 23.362C3.61462 23.9265 4.07354 24.3854 4.638 24.673C5.28 25 6.12 25 7.8 25H20.2C21.88 25 22.72 25 23.362 24.673C23.9265 24.3854 24.3854 23.9265 24.673 23.362C25 22.72 25 21.88 25 20.2V7.8C25 6.12 25 5.28 24.673 4.638C24.3854 4.07354 23.9265 3.61462 23.362 3.327C22.72 3 21.88 3 20.2 3H7.8C6.12 3 5.28 3 4.638 3.327C4.07354 3.61462 3.61462 4.07354 3.327 4.638ZM19.927 12.616C20.048 12.616 20.169 12.609 20.289 12.598H20.291V10.15C19.3736 10.0829 18.5089 9.69546 17.8482 9.05552C17.1874 8.41558 16.7725 7.56379 16.676 6.649H14.57L14.548 16.912C14.548 18.172 13.436 19.164 12.178 19.164C11.5733 19.164 10.9934 18.9238 10.5658 18.4962C10.1382 18.0686 9.898 17.4887 9.898 16.884C9.898 16.2793 10.1382 15.6994 10.5658 15.2718C10.9934 14.8442 11.5733 14.604 12.178 14.604C12.248 14.604 12.315 14.614 12.383 14.623L12.453 14.633V12.431C12.3613 12.4221 12.2692 12.4174 12.177 12.417C11.2938 12.4172 10.4304 12.6793 9.6961 13.1701C8.9618 13.661 8.38953 14.3586 8.05167 15.1746C7.7138 15.9907 7.6255 16.8886 7.79794 17.7549C7.97037 18.6211 8.39579 19.4168 9.02041 20.0413C9.64504 20.6658 10.4408 21.091 11.3071 21.2633C12.1734 21.4355 13.0713 21.347 13.8873 21.009C14.7033 20.6709 15.4007 20.0985 15.8914 19.3641C16.3821 18.6297 16.644 17.7662 16.644 16.883V10.84C17.0009 11.3851 17.4879 11.8328 18.061 12.1427C18.6342 12.4525 19.2754 12.6149 19.927 12.615V12.616Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a class="footer__social-link" href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.6666 14C25.6666 20.4433 20.4432 25.6667 14 25.6667C7.55665 25.6667 2.33331 20.4433 2.33331 14C2.33331 7.55672 7.55665 2.33337 14 2.33337C20.4432 2.33337 25.6666 7.55672 25.6666 14ZM14.418 10.9462C13.2833 11.4182 11.0154 12.3951 7.61431 13.8768C7.06202 14.0965 6.77271 14.3114 6.74638 14.5214C6.70187 14.8766 7.1465 15.0163 7.75195 15.2067C7.83432 15.2326 7.91965 15.2595 8.00713 15.2878C8.6028 15.4815 9.40411 15.708 9.82067 15.717C10.1985 15.7252 10.6203 15.5694 11.0859 15.2497C14.2636 13.1046 15.904 12.0204 16.0069 11.997C16.0796 11.9805 16.1802 11.9598 16.2485 12.0204C16.3167 12.0811 16.31 12.1959 16.3027 12.2267C16.2588 12.4145 14.5134 14.0371 13.6102 14.8768C13.3287 15.1386 13.1289 15.3242 13.0881 15.3667C12.9966 15.4616 12.9034 15.5515 12.8138 15.6378C12.2605 16.1713 11.8454 16.5714 12.8368 17.2247C13.3133 17.5387 13.6944 17.7982 14.0748 18.0572C14.4901 18.3402 14.9044 18.6223 15.4405 18.9737C15.577 19.0631 15.7074 19.1561 15.8344 19.2467C16.3178 19.5913 16.752 19.9009 17.2886 19.8515C17.6003 19.8229 17.9223 19.5297 18.0859 18.6554C18.4724 16.5892 19.2321 12.1124 19.4077 10.2677C19.4231 10.106 19.4037 9.89918 19.3882 9.80838C19.3726 9.71758 19.3402 9.5882 19.2221 9.49243C19.0823 9.379 18.8666 9.35509 18.77 9.35671C18.3312 9.36453 17.6579 9.59862 14.418 10.9462Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer__navigation nav">
+                <ul class="footer__nav reset-list">
+                    <h2 class="visually-hidden">Навигация по сайту</h2>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="news.html">Новости</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="redact.html">Редакция</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="ad.html">Реклама</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav reset-list">
+                    <h2 class="visually-hidden">Навигация по сайту</h2>
+                    <li class="footer__item">
+                        <a class="footer__link gray-text" href="stati.html">Статьи</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="redaction.html">Страница редакции</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="author.html">Страница автора</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script defer src="assets/js/main.js"></script>
+</body>
+
+</html>

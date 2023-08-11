@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Личный кабинет | Inkoch</title>
+</head>
+
+<body>
+
+    <header class="header-second">
+
+        <a href="index.html" class="header__logo header__logo-second">
+            <img src="img/logo2.svg" alt="logo">
+        </a>
+        <div class="container header__container js-menu-wrap">
+            <label class="switch dark-label">
+                <input class="visually-hidden" id="dark-theme" type="checkbox">
+                <span class="slider"></span>
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_827_14)">
+                        <path
+                            d="M12.8066 0.59375C13.799 2.06277 14.3285 3.79539 14.3269 5.56819C14.3269 10.5263 10.2639 14.5457 5.25142 14.5457C3.61265 14.5487 2.00346 14.1092 0.59375 13.2736C2.13988 16.3171 5.32267 18.4062 9.00036 18.4062C14.1951 18.4062 18.406 14.2408 18.406 9.10219C18.406 5.30427 16.104 2.03983 12.8066 0.59375Z"
+                            fill="currentColor" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_827_14">
+                            <rect width="19" height="19" fill="currentColor" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </label>
+            <nav class="nav">
+                <h2 class="visually-hidden">Навигация по сайту</h2>
+                <ul class="nav__list reset-list">
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Заказы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Конкурсы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Исполнители</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Заказчики</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link main-link" href="#">Помощь</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-wrap">
+                <a class="btn header__auth" href="auth.html">
+                    Авторизация
+                </a>
+                <a class="btn header__reg" href="register.html">Регистрация</a>
+            </div>
+        </div>
+        <button class="header__burger hamburger hamburger--collapse js-burger reset-btn" type="button">
+            <span class="hamburger__box">
+                <span class="hamburger__inner"></span>
+            </span>
+        </button>
+    </header>
+
+    <main>
+        <section class="user">
+            <div class="container auth__container user__container">
+                <a href="#" class="user__settings link">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.5059 11.2793C14.4122 11.2793 13.388 11.6812 12.6125 12.4158C11.8406 13.1503 11.4126 14.1204 11.4126 15.1563C11.4126 16.1923 11.8406 17.1624 12.6125 17.8969C13.388 18.628 14.4122 19.0333 15.5059 19.0333C16.5997 19.0333 17.6239 18.628 18.3994 17.8969C19.1713 17.1624 19.5993 16.1923 19.5993 15.1563C19.5993 14.1204 19.1713 13.1503 18.3994 12.4158C18.0207 12.0542 17.5698 11.7676 17.0731 11.5725C16.5764 11.3774 16.0437 11.2778 15.5059 11.2793ZM30.5879 19.4387L28.1956 17.5019C28.309 16.8436 28.3675 16.1715 28.3675 15.5028C28.3675 14.8341 28.309 14.1585 28.1956 13.5037L30.5879 11.5669C30.7686 11.4204 30.898 11.2252 30.9587 11.0074C31.0195 10.7895 31.0088 10.5593 30.9281 10.3473L30.8952 10.2572C30.2368 8.51343 29.2502 6.89703 27.9834 5.48635L27.9176 5.4136C27.7637 5.24227 27.5587 5.11912 27.3295 5.06036C27.1003 5.0016 26.8577 5.01 26.6336 5.08445L23.6633 6.08575C22.5659 5.23343 21.3441 4.56128 20.0199 4.09354L19.4456 1.15201C19.4023 0.930419 19.2888 0.726556 19.1202 0.567511C18.9517 0.408465 18.736 0.301764 18.5019 0.261585L18.4031 0.244261C16.5009 -0.0814205 14.4963 -0.0814205 12.5942 0.244261L12.4954 0.261585C12.2613 0.301764 12.0456 0.408465 11.877 0.567511C11.7085 0.726556 11.595 0.930419 11.5516 1.15201L10.9737 4.1074C9.66203 4.57887 8.44013 5.24939 7.35592 6.09268L4.36367 5.08445C4.13968 5.00941 3.89688 5.00071 3.66754 5.0595C3.4382 5.1183 3.23317 5.2418 3.07971 5.4136L3.01387 5.48635C1.74927 6.89853 0.762995 8.51453 0.102099 10.2572L0.0691768 10.3473C-0.0954333 10.7804 0.0399129 11.2655 0.409371 11.5669L2.83097 13.5245C2.71757 14.1758 2.6627 14.8411 2.6627 15.4993C2.6627 16.1646 2.71757 16.8298 2.83097 17.4742L0.416687 19.4318C0.235966 19.5783 0.106622 19.7735 0.0458532 19.9913C-0.0149152 20.2092 -0.00422851 20.4394 0.0764927 20.6514L0.109415 20.7414C0.771513 22.4842 1.7482 24.0953 3.02118 25.5123L3.08703 25.5851C3.24086 25.7564 3.44589 25.8796 3.6751 25.9383C3.9043 25.9971 4.14692 25.9887 4.37099 25.9142L7.36323 24.906C8.45332 25.7549 9.66778 26.427 10.981 26.8913L11.559 29.8467C11.6023 30.0683 11.7158 30.2721 11.8844 30.4312C12.0529 30.5902 12.2686 30.6969 12.5027 30.7371L12.6015 30.7544C14.5224 31.0819 16.4895 31.0819 18.4104 30.7544L18.5092 30.7371C18.7433 30.6969 18.959 30.5902 19.1275 30.4312C19.2961 30.2721 19.4096 30.0683 19.4529 29.8467L20.0272 26.9051C21.3514 26.4339 22.5732 25.7653 23.6706 24.9129L26.6409 25.9142C26.8649 25.9893 27.1077 25.998 27.337 25.9392C27.5664 25.8804 27.7714 25.7569 27.9249 25.5851L27.9907 25.5123C29.2637 24.0883 30.2404 22.4842 30.9025 20.7414L30.9354 20.6514C31.0927 20.2217 30.9574 19.7401 30.5879 19.4387ZM15.5059 21.2473C11.954 21.2473 9.07518 18.5206 9.07518 15.1563C9.07518 11.7921 11.954 9.06539 15.5059 9.06539C19.0579 9.06539 21.9367 11.7921 21.9367 15.1563C21.9367 18.5206 19.0579 21.2473 15.5059 21.2473Z"
+                            fill="currentColor" />
+                    </svg>
+                    Настройки
+                </a>
+                <div class="auth__heading">
+                    <svg width="436" height="67" viewBox="0 0 436 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M217.827 0H218.173H436L420.095 45.0517C415.946 57.4698 406.602 67 392.089 67H218.173H217.827H43.9112C29.3985 67 20.0539 57.4698 15.9048 45.0517L0 0H217.827Z"
+                            fill="#34A853" />
+                    </svg>
+                    <h1 class="auth-head">Карта клиента</h1>
+                </div>
+                <div class="user__info">
+                    <div class="user__type">
+                        <ul class="user__info-list reset-list">
+                            <li class="user__info-item">
+                                <p class="user__info-text link">Тип профиля</p>
+                                <div class="user__info-about">
+                                    Исполнитель
+                                </div>
+                            </li>
+                            <li class="user__info-item">
+                                <p class="user__info-text link">Специализация</p>
+                                <div class="user__info-about">
+                                    Эксперт по системам
+                                    газоснабжения
+
+                                </div>
+                            </li>
+                            <li class="user__info-item">
+                                <p class="user__info-text link">Фамилия</p>
+                                <div class="user__info-about">
+                                    Пронин
+                                </div>
+                            </li>
+                            <li class="user__info-item">
+                                <p class="user__info-text link">Имя</p>
+                                <div class="user__info-about">
+                                    Алексей
+                                </div>
+                            </li>
+                            <li class="user__info-item">
+                                <p class="user__info-text link">Отчество</p>
+                                <div class="user__info-about">
+                                    Викторович
+                                </div>
+                            </li>
+                            <li class="user__info-item">
+                                <p class="user__info-text link">Телефон</p>
+                                <div class="user__info-about">
+                                    +7(901)288-28-28
+                                </div>
+                            </li>
+                            <li class="user__info-item">
+                                <p class="user__info-text link">E-mail</p>
+                                <div class="user__info-about">
+                                    Pronin_Al1298@gmail.com
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user__wrap">
+                        <img class="user__wrap-img" src="img/user.jpg" alt="Пользователь">
+                        <div class="user__rating">
+                            <p class="green user__rating-m">Рейтинг:</p>
+                            <p class="green">4,7
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.0304 9.8596L20.037 8.58214L16.0167 0.616237C15.9069 0.398135 15.7262 0.221576 15.5031 0.114257C14.9434 -0.155774 14.2633 0.0692515 13.9835 0.616237L9.96319 8.58214L0.969774 9.8596C0.721827 9.89422 0.495132 10.0085 0.321568 10.1816C0.11174 10.3923 -0.00388537 10.6759 9.96959e-05 10.97C0.00408476 11.264 0.127354 11.5445 0.342821 11.7498L6.84968 17.9501L5.3124 26.7054C5.27635 26.909 5.29941 27.1185 5.37896 27.31C5.45852 27.5015 5.59138 27.6674 5.76249 27.7889C5.9336 27.9103 6.13611 27.9825 6.34705 27.9972C6.55799 28.0119 6.76893 27.9685 6.95594 27.872L15.0001 23.7385L23.0442 27.872C23.2638 27.9863 23.5188 28.0244 23.7633 27.9828C24.3796 27.879 24.794 27.3077 24.6877 26.7054L23.1505 17.9501L29.6573 11.7498C29.8344 11.5802 29.9513 11.3586 29.9867 11.1163C30.0824 10.5104 29.6502 9.94961 29.0304 9.8596V9.8596Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </p>
+                        </div>
+                        <a class="green-link user__wrap-link" href="#">Паспортные данные</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container auth__container user__container">
+                <div class="user__info-bottom">
+                    <ul class="user__nav reset-list">
+                        <li class="user__nav-item">
+                            <a class="user__nav-link" href="#">
+                                <span>Финансы</span>
+                            </a>
+                        </li>
+                        <li class="user__nav-item active">
+                            <a class="user__nav-link" href="#">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li class="user__nav-item">
+                            <a class="user__nav-link" href="#">
+                                <span>Мой портфель</span>
+                            </a>
+                        </li>
+                        <li class="user__nav-item">
+                            <a class="user__nav-link" href="#">
+                                <span>История оплат</span>
+                            </a>
+                        </li>
+                        <li class="user__nav-item">
+                            <a class="user__nav-link" href="#">
+                                <span>Мои отзывы</span>
+                            </a>
+                        </li>
+                        <li class="user__nav-item">
+                            <a class="user__nav-link" href="#">
+                                <span>Отзывы обо мне</span>
+                            </a>
+                        </li>
+                        <li class="user__nav-item user__nav-item-pro">
+                            <a class="user__nav-link" href="#">
+                                <span>Скрытые ставки</span>
+                            </a>
+                        </li>
+                        <li class="user__nav-item user__nav-item-pro">
+                            <a class="user__nav-link" href="#">
+                                <span>Приоритетная
+                                    поддержка</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="user__nav-about reset-list">
+                        <li class="user__nav-about-item">
+                            <p class="green">Мой внутренний счёт</p>
+                            <div class="user__balance">
+                                <div class="user__balance-info">
+                                    <a href="#" onclick="return false;" title="172,3">172,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <a href="#" class="user__balance-add">
+                                    <svg width="27" height="29" viewBox="0 0 27 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.0798 0.465332C14.2837 0.465332 15.2597 1.52995 15.2597 2.84322V26.6221C15.2597 27.9354 14.2837 29 13.0798 29C11.8758 29 10.8998 27.9354 10.8998 26.6221L10.8998 2.84322C10.8998 1.52995 11.8758 0.465332 13.0798 0.465332Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M0 14.7327C2.10508e-07 13.4194 0.976003 12.3548 2.17996 12.3548L23.9796 12.3548C25.1836 12.3548 26.1596 13.4194 26.1596 14.7327C26.1596 16.0459 25.1836 17.1106 23.9796 17.1106L2.17996 17.1106C0.976002 17.1106 -2.10506e-07 16.0459 0 14.7327Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    Пополнить
+                                </a>
+                            </div>
+                        </li>
+                        <li class="user__nav-about-item">
+                            <p class="green">Резервирование</p>
+                            <div class="user__balance">
+                                <div class="user__balance-info">
+                                    <a href="#" onclick="return false;" title="2575217,3">2575217,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <a href="#" class="user__balance-add">
+                                    <svg width="16" height="28" viewBox="0 0 16 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.69886 19.6364V19.483C5.71591 17.8551 5.88636 16.5597 6.21023 15.5966C6.53409 14.6335 6.99432 13.8537 7.59091 13.2571C8.1875 12.6605 8.90341 12.1108 9.73864 11.608C10.2415 11.3011 10.6932 10.9389 11.0938 10.5213C11.4943 10.0952 11.8097 9.60511 12.0398 9.05114C12.2784 8.49716 12.3977 7.88352 12.3977 7.21023C12.3977 6.375 12.2017 5.65057 11.8097 5.03693C11.4176 4.42329 10.8935 3.95028 10.2372 3.6179C9.58097 3.28551 8.85227 3.11932 8.05114 3.11932C7.35227 3.11932 6.67898 3.2642 6.03125 3.55398C5.38352 3.84375 4.84233 4.29972 4.40767 4.92188C3.97301 5.54403 3.72159 6.35795 3.65341 7.36364H0.431818C0.5 5.91477 0.875 4.67472 1.55682 3.64347C2.24716 2.61222 3.15483 1.82386 4.27983 1.27841C5.41335 0.732953 6.67045 0.460226 8.05114 0.460226C9.55114 0.460226 10.8551 0.758522 11.9631 1.35511C13.0795 1.9517 13.9403 2.76989 14.5455 3.80966C15.1591 4.84943 15.4659 6.03409 15.4659 7.36364C15.4659 8.30114 15.321 9.14915 15.0312 9.90767C14.75 10.6662 14.3409 11.3437 13.804 11.9403C13.2756 12.5369 12.6364 13.0653 11.8864 13.5256C11.1364 13.9943 10.5355 14.4886 10.0838 15.0085C9.6321 15.5199 9.30398 16.1293 9.09943 16.8366C8.89489 17.544 8.78409 18.4261 8.76705 19.483V19.6364H5.69886ZM7.33523 27.2045C6.70455 27.2045 6.16335 26.9787 5.71165 26.527C5.25994 26.0753 5.03409 25.5341 5.03409 24.9034C5.03409 24.2727 5.25994 23.7315 5.71165 23.2798C6.16335 22.8281 6.70455 22.6023 7.33523 22.6023C7.96591 22.6023 8.5071 22.8281 8.95881 23.2798C9.41051 23.7315 9.63636 24.2727 9.63636 24.9034C9.63636 25.321 9.52983 25.7045 9.31676 26.054C9.11222 26.4034 8.83523 26.6847 8.4858 26.8977C8.14489 27.1023 7.76136 27.2045 7.33523 27.2045Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    Узнать
+                                </a>
+                            </div>
+                        </li>
+                        <li class="user__nav-about-item about--second">
+                            <p class="green">Зачисление</p>
+                            <div class="user__balance tabs js-tabs-wrap">
+                                <div class="user__balance-info js-tab-content" data-target="o">
+                                    <a href="#" onclick="return false;" title="2575217,3">5217,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <div class="user__balance-info js-tab-content" data-target="t">
+                                    <a href="#" onclick="return false;" title="75217,3">75217,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <div class="user__balance-info js-tab-content active" data-target="th">
+                                    <a href="#" onclick="return false;" title="257217,3">257217,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <div class="user__tabs">
+                                    <button class="btn user__balance-add js-tab-btn" data-path="o">
+                                        Cутки
+                                    </button>
+                                    <button class="btn user__balance-add js-tab-btn" data-path="t">
+                                        Неделя
+                                    </button>
+                                    <button class="btn user__balance-add js-tab-btn active" data-path="th">
+                                        Всё время
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user__nav-about-item about--second">
+                            <p class="green">Вывод</p>
+                            <div class="user__balance tabs js-tabs-wrap">
+                                <div class="user__balance-info js-tab-content active" data-target="o">
+                                    <a href="#" onclick="return false;" title="15217,3">15217,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <div class="user__balance-info js-tab-content" data-target="t">
+                                    <a href="#" onclick="return false;" title="575217,3">575217,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <div class="user__balance-info js-tab-content" data-target="th">
+                                    <a href="#" onclick="return false;" title="97257217,3">97257217,3</a>
+                                    <span class="valute">₽</span>
+                                </div>
+                                <div class="user__tabs">
+                                    <button class="btn user__balance-add js-tab-btn active" data-path="o">
+                                        Cутки
+                                    </button>
+                                    <button class="btn user__balance-add js-tab-btn" data-path="t">
+                                        Неделя
+                                    </button>
+                                    <button class="btn user__balance-add js-tab-btn" data-path="th">
+                                        Всё время
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <div class="footer__left-wrap footer__left-wrap-l">
+                    <a href="index.html" class="header__logo header__logo-second"><img src="img/logo2.svg" alt="logo"
+                            width="198" height="70"></a>
+                    <p class="gray-text">Позвоните нам</p>
+                    <a class="link footer__tel" href="tel:+7493257055">+7(4932) 95-70-55</a>
+                </div>
+                <div class="footer__left-wrap footer__left-wrap-r">
+                    <p class="gray-text adress">153012, Ивановская обл, Иваново г, Сакко ул, дом 39, помещение 1001А.
+                    </p>
+                    <p class="gray-text mail"><a href="mailto:info@inkoch.ru">info@inkoch.ru</a></p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <nav class="nav">
+                    <ul class="footer__list reset-list">
+                        <li class="footer__item main-footer-item">
+                            Информация
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">О сайте</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Оплата</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list reset-list">
+                        <li class="footer__item main-footer-item">
+                            Помощь
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Помощь</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Правила использования сайта</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Условия оферты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Правила защиты ПД</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list reset-list">
+                        <li class="footer__item main-footer-item">
+                            Аккаунт
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Профиль</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link gray-text" href="#">Избранное</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container footer__container footer__container-bottom">
+                <p class="footer__copyright gray-text">© 2023 «inkoch»</p>
+                <div class="footer__cookie">Мы используем cookies, чтобы вам было удобно работать с сайтом</div>
+                <div class="footer__it gray-text">
+                    <p>Разработка сайта: <a class="link" href="https://moovix.ru/" target="_blank">Moovix.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/tabs.js"></script>
+    <script defer src="assets/js/burger.js"></script>
+</body>
+
+</html>

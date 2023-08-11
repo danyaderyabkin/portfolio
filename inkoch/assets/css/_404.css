@@ -1,0 +1,116 @@
+.not-found {
+    min-height: 100vh;
+    background-image: url(../../img/bg404.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.not-found__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.not-found__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 935px;
+    min-height: 500px;
+    margin-bottom: var(--gap2);
+    width: 100%;
+    border: 3px solid var(--green);
+    border-radius: 110px;
+    -webkit-border-radius: 110px;
+    -moz-border-radius: 110px;
+    -ms-border-radius: 110px;
+    -o-border-radius: 110px;
+    color: var(--green);
+    background-color: var(--white);
+    background-image: url(../../img/Vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.not-found__title {
+    position: relative;
+    font-size: 230px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.not-found__error {
+    font-size: 30px;
+    position: absolute;
+    right: -40px;
+    bottom: 25px;
+}
+
+.not-found__wrap p {
+    font-size: 30px;
+    margin: 0 150px;
+}
+
+.nf-link {
+    font-size: 30px;
+}
+
+@media (max-width:768px) {
+    .not-found__title {
+        font-size: 140px;
+    }
+
+    .not-found__wrap {
+        min-height: 330px;
+    }
+
+    .not-found__wrap p {
+        margin: 0 50px;
+    }
+
+    .not-found__error {
+        font-size: 24px;
+        position: absolute;
+        right: -37px;
+        bottom: 12px;
+    }
+
+    .not-found__container {
+        top: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .not-found__title {
+        font-size: 90px;
+    }
+    .not-found__error {
+        font-size: 16px;
+        position: absolute;
+        right: -28px;
+        bottom: 9px;
+    }
+
+    .not-found__wrap p {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+    .not-found__wrap {
+        min-height: 212px;
+        border-radius: 65px;
+    }
+}

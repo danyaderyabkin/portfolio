@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h2 class="visually-hidden">Регистрация</h2>
+    <section class="login">
+        <div class="login__container">
+            <a class="login__logo header__logo logo" href="index.html">
+                <img src="img/GoLink.svg" alt="logo" width="160" height="55">
+            </a>
+            <h1 class="login__title">Регистрация</h1>
+            <form class="form__login">
+                <p class="login__attach">Ваш E-mail</p>
+                <label class="login__label-email">
+                    <input class="form__input input-login" type="text">
+                </label>
+                <a href="login.html" class="mobile-register more-btn">Уже есть аккаунт?</a>
+                <p class="login__attach">Пароль</p>
+                <label class="login__label-pass">
+                    <input class="form__input input-login to-margin" type="password" placeholder="Минимум 6 символов">
+                </label>
+                <button class="btn login__btn reset-btn">Регистрация</button>
+            </form>
+            <p class="copyright">© 2023 <a href="index.html" class="forget-pass more-btn">Golink</a>. Все права защищены</p>
+        </div>
+        <div class="login__container login__blue">
+            <h2 class="large">Есть аккаунт на GoLink?</h2>
+            <p class="login__text">Войдите в личный кабинет для просмотра статистики</p>
+            <a class="login-link header__register main-link" href="login.html">Авторизация</a>
+        </div>
+    </section>
+    
+</body>
+</html>

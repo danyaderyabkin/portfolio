@@ -1,0 +1,260 @@
+
+.history__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history__list {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap) var(--gap) 40px;
+    background-color: var(--white);
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0px 7px 20px -1px rgba(158, 158, 158, 0.25);
+}
+
+.history__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: var(--font-medplus);
+}
+
+.history__item:not(:last-child) {
+    margin-bottom: var(--gip);
+}
+
+.history__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.history__wrapper:last-child {
+    flex-shrink: 0;
+}
+
+.history__btn {
+    position: relative;
+    border: none;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: var(--gip);
+    flex-shrink: 0;
+}
+
+.history__btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M11.5 1.875H11.4733C10.7959 1.87499 10.2495 1.87499 9.80708 1.91113C9.35158 1.94836 8.9515 2.02698 8.58125 2.21561C7.99327 2.51521 7.51521 2.99328 7.21561 3.58128C7.02699 3.95146 6.94836 4.35158 6.91113 4.80711C6.87499 5.24953 6.87499 5.79587 6.875 6.47323V6.5V6.875H6.5H6.47325C5.79589 6.87499 5.24953 6.87499 4.80711 6.91113C4.35158 6.94836 3.95146 7.02698 3.58128 7.21561C2.99328 7.51521 2.51521 7.99327 2.21561 8.58125C2.02699 8.9515 1.94836 9.35158 1.91113 9.80708C1.87499 10.2495 1.87499 10.7959 1.875 11.4733V11.5V13.5V13.5267C1.87499 14.2041 1.87499 14.7505 1.91113 15.1929C1.94836 15.6484 2.02699 16.0485 2.21561 16.4187C2.51521 17.0067 2.99328 17.4847 3.58128 17.7844C3.95146 17.973 4.35158 18.0517 4.80711 18.0888C5.24953 18.125 5.79588 18.125 6.47323 18.125H6.5H8.5H8.52675C9.20417 18.125 9.7505 18.125 10.1929 18.0888C10.6484 18.0517 11.0485 17.973 11.4188 17.7844C12.0068 17.4847 12.4847 17.0067 12.7844 16.4187C12.973 16.0485 13.0517 15.6484 13.0888 15.1929C13.125 14.7505 13.125 14.2042 13.125 13.5267V13.5V13.125H13.5H13.5267C14.2042 13.125 14.7505 13.125 15.1929 13.0888C15.6484 13.0517 16.0485 12.973 16.4187 12.7844C17.0067 12.4847 17.4848 12.0068 17.7844 11.4188C17.973 11.0485 18.0517 10.6484 18.0888 10.1929C18.125 9.7505 18.125 9.20417 18.125 8.52675V8.5V6.5V6.47323C18.125 5.79588 18.125 5.24953 18.0888 4.80711C18.0517 4.35158 17.973 3.95146 17.7844 3.58128C17.4848 2.99328 17.0067 2.51521 16.4187 2.21561C16.0485 2.02698 15.6484 1.94836 15.1929 1.91113C14.7505 1.87499 14.2042 1.87499 13.5267 1.875H13.5H11.5ZM13.125 11.875H13.5C14.2104 11.875 14.7056 11.8745 15.0911 11.843C15.4693 11.8121 15.6867 11.7545 15.8512 11.6707C16.204 11.4908 16.4908 11.204 16.6707 10.8512C16.7545 10.6867 16.8121 10.4693 16.843 10.0911C16.8745 9.70558 16.875 9.21042 16.875 8.5V6.5C16.875 5.78963 16.8745 5.29442 16.843 4.9089C16.8121 4.53067 16.7545 4.31337 16.6707 4.14877C16.4908 3.79597 16.204 3.50913 15.8512 3.32937C15.6867 3.2455 15.4693 3.18788 15.0911 3.15698C14.7056 3.12548 14.2104 3.125 13.5 3.125H11.5C10.7896 3.125 10.2944 3.12548 9.90892 3.15698C9.53067 3.18788 9.31333 3.2455 9.14875 3.32937C8.796 3.50913 8.50917 3.79597 8.32937 4.14877C8.2455 4.31337 8.18789 4.53067 8.15698 4.9089C8.12548 5.29442 8.125 5.78963 8.125 6.5V6.875H8.5H8.52675C9.20417 6.87499 9.7505 6.87499 10.1929 6.91113C10.6484 6.94836 11.0485 7.02698 11.4188 7.21561C12.0068 7.51521 12.4847 7.99327 12.7844 8.58125C12.973 8.9515 13.0517 9.35158 13.0888 9.80708C13.125 10.2495 13.125 10.7958 13.125 11.4733V11.5V11.875ZM4.14877 8.32937C4.31337 8.2455 4.53068 8.18788 4.9089 8.15698C5.29442 8.12548 5.78963 8.125 6.5 8.125H8.5C9.21042 8.125 9.70558 8.12548 10.0911 8.15698C10.4693 8.18788 10.6867 8.2455 10.8512 8.32937C11.204 8.50917 11.4908 8.796 11.6707 9.14875C11.7545 9.31333 11.8121 9.53067 11.843 9.90892C11.8745 10.2944 11.875 10.7896 11.875 11.5V13.5C11.875 14.2104 11.8745 14.7056 11.843 15.0911C11.8121 15.4693 11.7545 15.6867 11.6707 15.8512C11.4908 16.204 11.204 16.4908 10.8512 16.6707C10.6867 16.7545 10.4693 16.8121 10.0911 16.843C9.70558 16.8745 9.21042 16.875 8.5 16.875H6.5C5.78963 16.875 5.29442 16.8745 4.9089 16.843C4.53068 16.8121 4.31337 16.7545 4.14877 16.6707C3.79597 16.4908 3.50913 16.204 3.32937 15.8512C3.2455 15.6867 3.18789 15.4693 3.15698 15.0911C3.12548 14.7056 3.125 14.2104 3.125 13.5V11.5C3.125 10.7896 3.12548 10.2944 3.15698 9.90892C3.18789 9.53067 3.2455 9.31333 3.32937 9.14875C3.50913 8.796 3.79597 8.50917 4.14877 8.32937Z" fill="white"/%3E%3C/svg%3E%0A');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.history__link-text {
+    word-break: break-all;
+    margin-right: var(--gap2);
+}
+
+.history__link {
+    color: var(--turq);
+}
+
+.history__more {
+    display: flex;
+    align-items: center;
+    margin-top: -35px;
+}
+.history__more svg{
+    margin-left: 3px;
+}
+
+.about {
+    padding-top: 110px;
+    padding-bottom: var(--gap2);
+}
+
+.about__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about__image {
+    width: 40%;
+}
+.about__image img {
+    width: 90%;
+}
+
+.about__wrapper {
+    width: 60%;
+}
+
+.about__text {
+    margin-bottom: var(--gap2);
+}
+
+.advant {
+    padding-top: var(--gap2);
+    padding-bottom: var(--gap2);
+    background-color: var(--megalight);
+}
+
+.advant__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--container-min);
+}
+
+.advant__title {
+    text-align: center;
+    margin-bottom: var(--gap2);
+}
+
+.advant__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advant__item {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: var(--gap);
+    flex-basis: 31%;
+    box-shadow: 0px 7px 20px -1px rgba(158, 158, 158, 0.25);
+    transition: transform var(--short);
+    margin-bottom: var(--gip);
+    margin-right: var(--gip);
+}
+
+.advant__item img, h4 {
+    margin-bottom: 15px;
+}
+
+.anim {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.history__item:nth-child(n + 4) {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .history__list {
+        width: 90%;
+    }
+
+    .advant__item {
+        flex-basis: 60%;
+    }
+
+    .advant__list {
+        justify-content: center;
+    }
+  }
+@media (max-width: 768px) {
+
+    .history__list {
+        width: 100%;
+        margin-top: -195px;
+    }
+
+    .history__link-text {
+        margin-right: 15px;
+    }
+
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        width: 60%;
+    }
+
+    .about__text:last-child {
+        margin-bottom: 0;
+    }
+
+    .about__wrapper {
+        width: 100%;
+    }
+
+    .history__item {
+        font-size: var(--font-med);
+    }
+
+    .history__link {
+        font-size: var(--font-medplus);
+    }
+
+    .advant__item {
+        flex-basis: 70%;
+        margin-bottom: var(--gap);
+    }
+
+    .advant__list {
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .about {
+        padding-bottom: var(--gap);
+        padding-top: var(--gap2);
+        margin-top: -30px;
+    }
+
+    .about__text {
+        font-size: var(--font-df);
+    }
+
+    .about__image {
+        width: 70%;
+    }
+
+    .advant__item {
+        flex-basis: 95%;
+        margin-right: 0;
+    }
+
+    .history__item {
+        flex-direction: column;
+    }
+
+    .history__link {
+        font-size: var(--font-med);
+    }
+
+    .history__wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+  }
+
+  @media (any-hover: hover) {
+    .advant__item:hover {
+        transform: translateY(-15px);
+    }
+  }

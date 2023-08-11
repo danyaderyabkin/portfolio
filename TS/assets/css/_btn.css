@@ -1,0 +1,113 @@
+.btn {
+  display: inline-block;
+  padding: 20px 39px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: var(--bold);
+  line-height: 20px;
+  color: var(--black);
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color var(--short), color var(--short);
+}
+
+.btn:focus-visible {
+  color: var(--hover);
+}
+
+.btn:active {
+  color: var(--black);
+}
+
+.reset-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.more-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray);
+  border-radius: 7px;
+  padding: 7px 15px;
+  transition: box-shadow var(--short);
+}
+
+.more-btn svg {
+  margin-left: 7px;
+}
+
+
+.burger {
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 16px;
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger-span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.burger-span-1 {
+  top: 0;
+  left: 0;
+}
+
+.burger-span-3 {
+  top: 100%;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
+
+@media (any-hover: hover) {
+  .btn:hover:not(:active) {
+    color: var(--hover);
+  }
+
+  .more-btn:hover:not(:active) {
+    box-shadow: 0px 2px 6px 0px rgba(125, 125, 125, 0.15);
+    color: inherit;
+  }
+
+  .more-btn:focus-visible {
+    color: var(--blue);
+  }
+
+  .link:hover:not(:active) {
+    color: var(--hover);
+  }
+
+  .recommend__link:hover:not(:active) {
+    color: rgb(197, 197, 197);
+  }
+
+  .category-link:hover:not(:active) {
+    box-shadow: 0px 5px 9px -1px #eee;
+  }
+}
